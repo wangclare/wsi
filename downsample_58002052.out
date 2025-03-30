@@ -1,0 +1,16 @@
+SLURM_JOB_ID: 58002052
+SLURM_JOB_USER: vsc37341
+SLURM_JOB_ACCOUNT: intro_vsc37341
+SLURM_JOB_NAME: wsi_downsample
+SLURM_CLUSTER_NAME: genius
+SLURM_JOB_PARTITION: batch
+SLURM_NNODES: 1
+SLURM_NODELIST: r25i27n19
+SLURM_JOB_CPUS_PER_NODE: 8
+Date: Sun Mar 30 14:15:20 CEST 2025
+Walltime: 01-00:00:00
+========================================================================
+Job ID: 58002052
+Allocated node: r25i27n19
+Job started at: Sun Mar 30 14:15:20 CEST 2025
+Starting processing with 8 workers...

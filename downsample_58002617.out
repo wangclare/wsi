@@ -1,0 +1,20 @@
+SLURM_JOB_ID: 58002617
+SLURM_JOB_USER: vsc37341
+SLURM_JOB_ACCOUNT: intro_vsc37341
+SLURM_JOB_NAME: bracs_downsample
+SLURM_CLUSTER_NAME: genius
+SLURM_JOB_PARTITION: batch
+SLURM_NNODES: 1
+SLURM_NODELIST: r27i27n17
+SLURM_JOB_CPUS_PER_NODE: 8
+Date: Sun Mar 30 20:58:40 CEST 2025
+Walltime: 01-00:00:00
+========================================================================
+Job ID: 58002617
+Allocated node: r27i27n17
+Job started at: Sun Mar 30 20:58:40 CEST 2025
+找到 3657 个图像文件，使用 8 个工作线程...
+
+处理完成！日志已保存到 /scratch/leuven/373/vsc37341/BRACS/train_20x/processing_log.json
+成功率: 3657/3657
+Job finished at: Sun Mar 30 21:04:06 CEST 2025

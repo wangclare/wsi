@@ -1,0 +1,17 @@
+SLURM_JOB_ID: 58025766
+SLURM_JOB_USER: vsc37341
+SLURM_JOB_ACCOUNT: intro_vsc37341
+SLURM_JOB_NAME: bracs_norm
+SLURM_CLUSTER_NAME: genius
+SLURM_JOB_PARTITION: batch
+SLURM_NNODES: 1
+SLURM_NODELIST: r26i13n06
+SLURM_JOB_CPUS_PER_NODE: 8
+Date: Thu Apr  3 20:56:29 CEST 2025
+Walltime: 01-00:00:00
+========================================================================
+Job ID: 58025766
+Allocated node: r26i13n06
+Job started at: Thu Apr  3 20:56:29 CEST 2025
+✅ 所有图像处理完成，日志保存在 /scratch/leuven/373/vsc37341/BRACS/train_20x_norm/normalization_log.txt
+Job finished at: Thu Apr  3 21:11:35 CEST 2025

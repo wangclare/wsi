@@ -51,8 +51,11 @@ class TorchstainWithStandardRef:
 def normalize_and_save_patch_features(slide_id, h5_file_path, slide_file_path, output_path, normalizer, batch_size):
     wsi = openslide.open_slide(slide_file_path)
     dataset = Whole_Slide_Bag_FP(file_path=h5_file_path, wsi=wsi, img_transforms=normalizer.T)
+    loader = DataLoader(dataset, batch_size=batch_size, num_workers=2, pin_memory=True)
 
-    loader = DataLoader(dataset, batch_size=batch_size, num_workers=1, pin_memory=True)
+    buffer_imgs = []
+    buffer_coords = []
+    buffer_size = 100  # 可调节：50 是一个安全起点
 
     mode = 'w'
     for batch in tqdm(loader, desc=f"归一化中: {slide_id}"):
@@ -67,12 +70,28 @@ def normalize_and_save_patch_features(slide_id, h5_file_path, slide_file_path, o
                 print(f"❌ 归一化失败 patch: {coords[i]} 错误: {e}")
                 continue
 
-            asset_dict = {
-                'color_tensor': norm_np.reshape(1, *norm_np.shape),
-                'coords': coords[i].reshape(1, -1)
-            }
-            save_hdf5(output_path, asset_dict, attr_dict=None, mode=mode)
-            mode = 'a'
+            buffer_imgs.append(norm_np.reshape(1, *norm_np.shape))
+            buffer_coords.append(coords[i].reshape(1, -1))
+
+            # 写入条件满足
+            if len(buffer_imgs) >= buffer_size:
+                asset_dict = {
+                    'color_tensor': np.concatenate(buffer_imgs, axis=0),
+                    'coords': np.concatenate(buffer_coords, axis=0)
+                }
+                save_hdf5(output_path, asset_dict, attr_dict=None, mode=mode)
+                mode = 'a'
+                buffer_imgs = []
+                buffer_coords = []
+
+    # 写入剩余没写的（最后一组 < buffer_size）
+    if buffer_imgs:
+        asset_dict = {
+            'color_tensor': np.concatenate(buffer_imgs, axis=0),
+            'coords': np.concatenate(buffer_coords, axis=0)
+        }
+        save_hdf5(output_path, asset_dict, attr_dict=None, mode=mode)
+
 
 
 def main(args):
@@ -85,6 +104,17 @@ def main(args):
     else:
         print("⚠️ 当前未使用 GPU，处理可能较慢")
 
+    # 参数控制
+    sleep_every = 10        # 每处理 N 张 slide
+    sleep_seconds = 5       # 休息秒数
+    log_path = os.path.join(args.output_dir, "color_norm_log.csv")
+    slide_count = 0
+
+    # 初始化日志
+    if not os.path.exists(log_path):
+        with open(log_path, 'w') as f:
+            f.write("slide_id,patch_count,time_sec,status\n")
+
     for bag_name in bags:
         slide_id = bag_name.split('.h5')[0]
         h5_file_path = os.path.join(args.data_h5_dir, bag_name)
@@ -94,11 +124,39 @@ def main(args):
         if not os.path.exists(slide_file_path):
             print(f"❌ slide 不存在: {slide_file_path}")
             continue
+        if os.path.exists(output_path):
+            print(f"✅ 已存在，跳过: {slide_id}")
+            continue
 
-        print(f"\n处理 {slide_id}")
-        start = time.time()
-        normalize_and_save_patch_features(slide_id, h5_file_path, slide_file_path, output_path, normalizer, args.batch_size)
-        print(f"✅ {slide_id} 完成，用时: {time.time() - start:.2f}s")
+        print(f"\n🎯 处理 {slide_id}")
+        try:
+            start = time.time()
+            normalize_and_save_patch_features(slide_id, h5_file_path, slide_file_path, output_path, normalizer, args.batch_size)
+            duration = time.time() - start
+            status = "OK"
+        except Exception as e:
+            print(f"❌ 错误: {slide_id} - {e}")
+            duration = -1
+            status = f"FAIL:{str(e)}"
+
+        # 写日志
+        patch_count = "?"
+        try:
+            with h5py.File(output_path, 'r') as f:
+                patch_count = f['color_tensor'].shape[0]
+        except:
+            pass
+
+        with open(log_path, 'a') as f:
+            f.write(f"{slide_id},{patch_count},{duration:.2f},{status}\n")
+
+        # 显存清理 + sleep 控制
+        torch.cuda.empty_cache()
+        slide_count += 1
+        if slide_count % sleep_every == 0:
+            print(f"😴 已处理 {slide_count} 张，休息 {sleep_seconds} 秒...")
+            time.sleep(sleep_seconds)
+
 
 
 if __name__ == '__main__':

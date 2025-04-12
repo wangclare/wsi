@@ -2,7 +2,7 @@ import os
 import openslide
 import json
 
-main_folder = '/scratch/leuven/373/vsc37341/TCGA-BRCA/data/'
+main_folder = '/scratch/leuven/373/vsc37341/TCGA-BRCA/dataadd/'
 output_magnification_file = os.path.join(main_folder, 'svs_magnification_info.json')
 output_metadata_file = os.path.join(main_folder, 'svs_full_metadata.json')
 

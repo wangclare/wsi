@@ -76,7 +76,7 @@ if __name__ == '__main__':
     # 并行测试：使用不同线程数
     for n in [2, 4, 8, 16]:
         test_threads(n)
-'''
+
 #!/usr/bin/env python3
 import openslide
 import pyvips
@@ -88,3 +88,110 @@ print("OpenSlide version:", openslide_version)
 # 获取 pyvips 版本
 pyvips_version = getattr(pyvips, '__version__', 'Unknown')
 print("pyvips version:", pyvips_version)
+
+import h5py
+from PIL import Image
+import numpy as np
+import os
+
+# 设置路径
+h5_path = "路径/TCGA-xxx.h5"     # <- 改成你的实际 h5 文件路径
+save_dir = "sample_patches"       # <- 保存图片的文件夹
+os.makedirs(save_dir, exist_ok=True)
+
+# 打开 h5 文件并提取图像和坐标
+with h5py.File(h5_path, "r") as f:
+    patches = f['color_tensor'][:]   # shape: (N, 1, H, W, 3)
+    coords = f['coords'][:]
+
+# 去除多余维度（1 通道）
+patches = patches.squeeze(1)  # -> shape: (N, H, W, 3)
+
+# 保存前几张为 PNG 图片
+for i in range(min(5, len(patches))):
+    try:
+        img = Image.fromarray(patches[i])
+        img.save(os.path.join(save_dir, f"patch_{i}_at_{coords[i][0]}_{coords[i][1]}.png"))
+    except Exception as e:
+        print(f"⚠️ 第 {i} 张 patch 保存失败: {e}")
+
+python create_patches_fp.py --source "/scratch/leuven/373/vsc37341/TCGA-BRCA/problem3" --save_dir "/scratch/leuven/373/vsc37341/TCGA-BRCA/problem3_patch" --patch_size 224 --step_size 224 --preset tcga.csv --seg --patch --stitch         
+
+
+import os
+
+# 路径按你自己的实际情况替换
+wsi_dir = '/scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_collection'
+h5_dir = '/scratch/leuven/373/vsc37341/TCGA-BRCA/20x_norm/patches'
+
+# 原始文件（.svs 或 .tif）
+wsi_names = [os.path.splitext(f)[0] for f in os.listdir(wsi_dir) if f.endswith(('.svs', '.tif'))]
+
+# 成功切图的 .h5 文件
+h5_names = [os.path.splitext(f)[0] for f in os.listdir(h5_dir) if f.endswith('.h5')]
+
+# 找出没生成 h5 的 WSI
+missing = sorted(set(wsi_names) - set(h5_names))
+print("未生成 .h5 文件的 WSI：")
+for name in missing:
+    print(name)
+'''
+import h5py
+import os
+import csv
+from pathlib import Path
+
+def get_patch_count(h5_path):
+    """根据字段判断使用哪个 dataset 获取 patch 数量"""
+    try:
+        with h5py.File(h5_path, 'r') as f:
+            if 'color_tensor' in f:
+                count = f['color_tensor'].shape[0]
+                source = 'color_tensor'
+            elif 'coords' in f:
+                count = f['coords'].shape[0]
+                source = 'coords'
+            else:
+                print(f"⚠️  文件中没有 color_tensor 或 coords：{h5_path}")
+                return 0, 'none'
+        return count, source
+    except Exception as e:
+        print(f"❌ 无法读取 {h5_path}，错误：{e}")
+        return 0, 'error'
+
+def count_all_patches(folder_path, save_csv_path=None):
+    folder = Path(folder_path)
+    results = []
+    total = 0
+
+    print(f"\n📁 扫描文件夹: {folder_path}")
+    print("-" * 60)
+    for h5_file in sorted(folder.glob("*.h5")):
+        slide_id = h5_file.stem
+        count, source = get_patch_count(str(h5_file))
+        total += count
+        print(f"{slide_id:<40} ➜ {count:>5} patches  (from: {source})")
+        results.append([slide_id, count, source])
+
+    print("-" * 60)
+    print(f"✅ 总计 patch 数量: {total}")
+
+    if save_csv_path:
+        with open(save_csv_path, 'w', newline='') as f:
+            writer = csv.writer(f)
+            writer.writerow(['slide_id', 'patch_count', 'source'])
+            writer.writerows(results)
+        print(f"📄 结果已保存为: {save_csv_path}")
+
+    return results
+if __name__ == "__main__":
+    # 你的 patch .h5 文件夹路径
+    folder = "/scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches"
+
+    # 是否保存为 CSV（可选）
+    output_csv = "/scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patch_count_summary.csv"
+
+    count_all_patches(folder, save_csv_path=output_csv)
+
+
+

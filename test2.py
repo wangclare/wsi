@@ -1,3 +1,4 @@
+'''
 from PIL import Image
 import numpy as np
 import torch
@@ -72,3 +73,55 @@ if __name__ == "__main__":
                 print(f"❌ 处理失败: {batch_names[i]}, 错误: {e}")
 
     print("🎉 全部完成！")
+'''
+#!/usr/bin/env python3
+import os
+import csv
+import h5py
+from collections import defaultdict
+
+# —— 用户配置 —— 
+filtered_csv = "/scratch/leuven/373/vsc37341/TCGA-BRCA/color_norm_58059717.csv"
+norm_dir     = "/scratch/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches"   # e.g. …/BRCATestNorm
+slide_ext    = ".h5"
+# ————————
+
+# 1) 读 filtered CSV
+failed = defaultdict(list)
+with open(filtered_csv, newline='', encoding='utf-8') as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        sid = row["slide_id"]
+        x, y = int(row["x"]), int(row["y"])
+        failed[sid].append((x, y))
+
+# 2) 对每个 slide 验证
+all_ok = True
+for sid, coords in failed.items():
+    h5_path = os.path.join(norm_dir, sid + slide_ext)
+    if not os.path.exists(h5_path):
+        print(f"⚠️ 归一化 H5 不存在: {h5_path}")
+        all_ok = False
+        continue
+
+    # 读归一化后的 coords
+    with h5py.File(h5_path, "r") as f:
+        if "coords" not in f:
+            print(f"❌ 文件里没 coords 数据集: {h5_path}")
+            all_ok = False
+            continue
+        norm_coords = set(map(tuple, f["coords"][:]))
+
+    # 计算 CSV 坐标里哪些反而出现在了 norm_coords
+    intersect = [c for c in coords if c in norm_coords]
+    if intersect:
+        print(f"❌ {sid} 有 {len(intersect)} 个本该被过滤的坐标竟然还在归一化文件里！示例: {intersect[:5]}")
+        all_ok = False
+    else:
+        print(f"✅ {sid} 的所有 {len(coords)} 个失败坐标均未写入归一化文件。")
+
+# 3) 总结
+if all_ok:
+    print("\n🎉 验证通过：所有失败坐标都未出现在归一化后的 HDF5 中！")
+else:
+    print("\n🚨 有部分 slide 验证未通过，请检查上述输出！")

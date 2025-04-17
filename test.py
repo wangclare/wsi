@@ -186,12 +186,13 @@ def count_all_patches(folder_path, save_csv_path=None):
     return results
 if __name__ == "__main__":
     # 你的 patch .h5 文件夹路径
-    folder = "/scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches"
+    folder = "/scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch_colornorm"
 
     # 是否保存为 CSV（可选）
-    output_csv = "/scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patch_count_summary.csv"
+    output_csv = "/scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch_colornorm/patch_count_summary.csv"
 
     count_all_patches(folder, save_csv_path=output_csv)
-
+#✅ 总计 patch 数量: 1464269,N
+#✅ 总计 patch 数量: 1464839,O
 
 

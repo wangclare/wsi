@@ -1,3 +1,4 @@
+'''
 from PIL import Image
 import numpy as np
 import torch
@@ -73,3 +74,35 @@ if __name__ == "__main__":
                 print(f"❌ 处理失败: {batch_names[i]}, 错误: {e}")
 
     print("🎉 全部完成！")
+'''
+import os
+import argparse
+import csv
+
+def count_pngs(root_dir):
+    """
+    遍历 root_dir 下所有子目录（递归），
+    收集每个目录中 .png 文件的数量（只记录 >0 的目录）。
+    返回列表 [(dirpath, png_count), ...]。
+    """
+    results = []
+    for dirpath, _, filenames in os.walk(root_dir):
+        png_count = sum(1 for fname in filenames if fname.lower().endswith('.png'))
+        if png_count > 0:
+            results.append((dirpath, png_count))
+    return results
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='统计目录下各子目录的 PNG 数量，并输出 CSV')
+    parser.add_argument('root_dir', help='要检查的根目录')
+    parser.add_argument('--output_csv', default='png_counts.csv', help='输出的 CSV 文件路径')
+    args = parser.parse_args()
+
+    data = count_pngs(args.root_dir)
+    # 写入 CSV
+    with open(args.output_csv, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['directory', 'png_count'])
+        writer.writerows(data)
+
+    print(f"✅ 已将结果保存到 CSV: {args.output_csv}")

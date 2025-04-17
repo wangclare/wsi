@@ -1,0 +1,4514 @@
+SLURM_JOB_ID: 58059717
+SLURM_JOB_USER: vsc37341
+SLURM_JOB_ACCOUNT: intro_vsc37341
+SLURM_JOB_NAME: TCGA-BRCA-Stain-Normlization
+SLURM_CLUSTER_NAME: genius
+SLURM_JOB_PARTITION: gpu_p100
+SLURM_NNODES: 1
+SLURM_NODELIST: r24g37
+SLURM_JOB_CPUS_PER_NODE: 4
+SLURM_JOB_GPUS: 0
+Date: Sat Apr 12 23:04:30 CEST 2025
+Walltime: 03-00:00:00
+========================================================================
+ Job ID: 58059717
+ Node: r24g37
+ Started at: Sat Apr 12 23:04:30 CEST 2025
+✅ 正在使用 GPU 加速归一化处理
+
+🎯 处理 TCGA-E9-A1N5-01Z-00-DX1.94DE7B4B-3798-4CC2-8A64-77796A58821A
+downsample [1. 1.]
+downsampled_level_dim [35431 33918]
+level_dim [35431 33918]
+name TCGA-E9-A1N5-01Z-00-DX1.94DE7B4B-3798-4CC2-8A64-77796A58821A
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [21344 22080] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AC-A6IX-01Z-00-DX1.45B63C4F-9DC3-4CED-9DF9-0F86E647BEA3
+downsample [1. 1.]
+downsampled_level_dim [18705 29012]
+level_dim [18705 29012]
+name TCGA-AC-A6IX-01Z-00-DX1.45B63C4F-9DC3-4CED-9DF9-0F86E647BEA3
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [15686 18592] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [15686 18816] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [16134 18816] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A8-A07S-01Z-00-DX1.34AFF327-E7FD-49E1-B918-0C09129581FB
+downsample [1. 1.]
+downsampled_level_dim [38656 46848]
+level_dim [38656 46848]
+name TCGA-A8-A07S-01Z-00-DX1.34AFF327-E7FD-49E1-B918-0C09129581FB
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-S3-A6ZH-01Z-00-DX1.E728FF79-4921-436F-BFF5-5B782C0EEB9A
+downsample [1. 1.]
+downsampled_level_dim [25896 29427]
+level_dim [25896 29427]
+name TCGA-S3-A6ZH-01Z-00-DX1.E728FF79-4921-436F-BFF5-5B782C0EEB9A
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A23G-01Z-00-DX1.2F0326F7-6B77-4B3F-B4FA-59ADB785AA07
+downsample [1. 1.]
+downsampled_level_dim [9960 9271]
+level_dim [9960 9271]
+name TCGA-AC-A23G-01Z-00-DX1.2F0326F7-6B77-4B3F-B4FA-59ADB785AA07
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A2-A1G1-01Z-00-DX1.E52A474F-DE13-41CF-94D4-D00BAC46ECF4
+downsample [1. 1.]
+downsampled_level_dim [38782 28670]
+level_dim [38782 28670]
+name TCGA-A2-A1G1-01Z-00-DX1.E52A474F-DE13-41CF-94D4-D00BAC46ECF4
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [27751 15491] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [27751 15715] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AC-A23E-01Z-00-DX1.F12A5A87-72CF-42F8-A6EC-8E7FAD80B1F7
+downsample [1. 1.]
+downsampled_level_dim [21912 25993]
+level_dim [21912 25993]
+name TCGA-AC-A23E-01Z-00-DX1.F12A5A87-72CF-42F8-A6EC-8E7FAD80B1F7
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AR-A255-01Z-00-DX1.E67C081D-50C9-451C-814B-F097B2671300
+downsample [1. 1.]
+downsampled_level_dim [25704 29823]
+level_dim [25704 29823]
+name TCGA-AR-A255-01Z-00-DX1.E67C081D-50C9-451C-814B-F097B2671300
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A097-01Z-00-DX1.4D06990E-E759-40F0-9106-59408CF350E5
+downsample [1. 1.]
+downsampled_level_dim [38144 55040]
+level_dim [38144 55040]
+name TCGA-A8-A097-01Z-00-DX1.4D06990E-E759-40F0-9106-59408CF350E5
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AO-A03T-01Z-00-DX1.8B75E203-6DC8-4AC9-A256-6FCB818DA0DD
+downsample [1. 1.]
+downsampled_level_dim [41831 35326]
+level_dim [41831 35326]
+name TCGA-AO-A03T-01Z-00-DX1.8B75E203-6DC8-4AC9-A256-6FCB818DA0DD
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [26608 23968] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+😴 已处理 10 张，休息 5 秒...
+
+🎯 处理 TCGA-AO-A0J7-01Z-00-DX1.DBA7BA24-CEEF-4636-87BB-D12D8DF016A3
+downsample [1. 1.]
+downsampled_level_dim [49799 35156]
+level_dim [49799 35156]
+name TCGA-AO-A0J7-01Z-00-DX1.DBA7BA24-CEEF-4636-87BB-D12D8DF016A3
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 7888 16032] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8560 25440] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AC-A3OD-01Z-00-DX1.E19B311B-BAB1-4CE8-9421-B49D5BE4537E
+downsample [1. 1.]
+downsampled_level_dim [18571 11292]
+level_dim [18571 11292]
+name TCGA-AC-A3OD-01Z-00-DX1.E19B311B-BAB1-4CE8-9421-B49D5BE4537E
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A4SB-01Z-00-DX1.E8925605-5189-441E-A719-92CFC1118B0B
+downsample [1. 1.]
+downsampled_level_dim [45220 40024]
+level_dim [45220 40024]
+name TCGA-A7-A4SB-01Z-00-DX1.E8925605-5189-441E-A719-92CFC1118B0B
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-5L-AAT0-01Z-00-DX1.5E171263-30BF-4C6B-88A1-E8EA0522A861
+downsample [1. 1.]
+downsampled_level_dim [30876 29920]
+level_dim [30876 29920]
+name TCGA-5L-AAT0-01Z-00-DX1.5E171263-30BF-4C6B-88A1-E8EA0522A861
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A075-01Z-00-DX1.8E06AF51-951F-48E8-934E-42A455F65E5F
+downsample [1. 1.]
+downsampled_level_dim [40704 58624]
+level_dim [40704 58624]
+name TCGA-A8-A075-01Z-00-DX1.8E06AF51-951F-48E8-934E-42A455F65E5F
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [16096 18336] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [29088 26624] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [29088 26848] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [29312 26848] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [29312 27072] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [29536 26624] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [29536 26848] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [29536 27072] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [29760 26848] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-C8-A12X-01Z-00-DX1.2967579D-40AE-4425-BE81-5109713C16B4
+downsample [1. 1.]
+downsampled_level_dim [36485 28798]
+level_dim [36485 28798]
+name TCGA-C8-A12X-01Z-00-DX1.2967579D-40AE-4425-BE81-5109713C16B4
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 7584 18145] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AN-A0FX-01Z-00-DX1.C9656600-F823-4044-972B-7059B39FC539
+downsample [1. 1.]
+downsampled_level_dim [22372 27522]
+level_dim [22372 27522]
+name TCGA-AN-A0FX-01Z-00-DX1.C9656600-F823-4044-972B-7059B39FC539
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A0D9-01Z-00-DX1.FBC3B90F-C58B-4476-8354-0AF9248324E3
+downsample [1. 1.]
+downsampled_level_dim [54264 17413]
+level_dim [54264 17413]
+name TCGA-A7-A0D9-01Z-00-DX1.FBC3B90F-C58B-4476-8354-0AF9248324E3
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [48115 12801] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [5600 9632] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AO-A0J3-01Z-00-DX1.8F28BFC8-D37E-425F-A9E3-4C23F083237C
+downsample [1. 1.]
+downsampled_level_dim [45815 44483]
+level_dim [45815 44483]
+name TCGA-AO-A0J3-01Z-00-DX1.8F28BFC8-D37E-425F-A9E3-4C23F083237C
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [31472 26064] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [31472 26512] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [32144 25840] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+
+🎯 处理 TCGA-A7-A0DB-01Z-00-DX1.9CE855BC-0C37-43FB-8806-6625E176BE2E
+downsample [1. 1.]
+downsampled_level_dim [86156 18808]
+level_dim [86156 18808]
+name TCGA-A7-A0DB-01Z-00-DX1.9CE855BC-0C37-43FB-8806-6625E176BE2E
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 20 张，休息 5 秒...
+
+🎯 处理 TCGA-A8-A08O-01Z-00-DX1.BC87C01D-F081-41CA-939A-875C61588E88
+downsample [1. 1.]
+downsampled_level_dim [43776 29440]
+level_dim [43776 29440]
+name TCGA-A8-A08O-01Z-00-DX1.BC87C01D-F081-41CA-939A-875C61588E88
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-PL-A8LZ-01A-01-DX1.B9F233EE-06DD-4C14-A392-D2937C7C0868
+downsample [1. 1.]
+downsampled_level_dim [39840 10050]
+level_dim [39840 10050]
+name TCGA-PL-A8LZ-01A-01-DX1.B9F233EE-06DD-4C14-A392-D2937C7C0868
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AO-A03V-01Z-00-DX1.52EBCB72-0C65-4E67-B9BB-DA15494327DE
+downsample [1. 1.]
+downsampled_level_dim [35855 34985]
+level_dim [35855 34985]
+name TCGA-AO-A03V-01Z-00-DX1.52EBCB72-0C65-4E67-B9BB-DA15494327DE
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A4ZE-01Z-00-DX1.A9BB4DBC-4314-4A77-AA1C-0882DBC370F1
+downsample [1. 1.]
+downsampled_level_dim [12950 13878]
+level_dim [12950 13878]
+name TCGA-AC-A4ZE-01Z-00-DX1.A9BB4DBC-4314-4A77-AA1C-0882DBC370F1
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-E9-A1ND-01Z-00-DX1.5C2F5250-A3B2-4B97-9E11-56CF3C7CA2DB
+downsample [1. 1.]
+downsampled_level_dim [33037 34189]
+level_dim [33037 34189]
+name TCGA-E9-A1ND-01Z-00-DX1.5C2F5250-A3B2-4B97-9E11-56CF3C7CA2DB
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [20065 10272] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-E9-A1N9-01Z-00-DX1.982C83A6-0E06-47B3-A7C7-1773A2CD1771
+downsample [1. 1.]
+downsampled_level_dim [29206 33318]
+level_dim [29206 33318]
+name TCGA-E9-A1N9-01Z-00-DX1.982C83A6-0E06-47B3-A7C7-1773A2CD1771
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 6915 12000] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [9827 6848] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [10051  6848] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [10275  6848] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [10499  6848] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [10499  7072] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [10499 27008] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [10723  7072] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [10947  7072] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [16771  2368] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [16995  2368] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19011 25888] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+
+🎯 处理 TCGA-A8-A09E-01Z-00-DX1.239A8E03-49EA-4C29-AF86-FC1BD8A9DB20
+downsample [1. 1.]
+downsampled_level_dim [31488 30976]
+level_dim [31488 30976]
+name TCGA-A8-A09E-01Z-00-DX1.239A8E03-49EA-4C29-AF86-FC1BD8A9DB20
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-E9-A3X8-01Z-00-DX1.D1532F80-F5F8-47AF-8A1B-B59E345F5D70
+downsample [1. 1.]
+downsampled_level_dim [27608 28389]
+level_dim [27608 28389]
+name TCGA-E9-A3X8-01Z-00-DX1.D1532F80-F5F8-47AF-8A1B-B59E345F5D70
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 7650 26400] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7874 26176] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [8546 5344] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [8770 4896] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [8770 5344] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [8994 4896] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AC-A6IV-01Z-00-DX1.DA4F4B9F-9070-4B3A-996F-311E0A989FFB
+downsample [1. 1.]
+downsampled_level_dim [ 8633 13968]
+level_dim [ 8633 13968]
+name TCGA-AC-A6IV-01Z-00-DX1.DA4F4B9F-9070-4B3A-996F-311E0A989FFB
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-BH-A0BP-01Z-00-DX1.63A87C1D-87FA-494D-9836-74290B5DC30D
+downsample [1. 1.]
+downsampled_level_dim [40325 37253]
+level_dim [40325 37253]
+name TCGA-BH-A0BP-01Z-00-DX1.63A87C1D-87FA-494D-9836-74290B5DC30D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 30 张，休息 5 秒...
+
+🎯 处理 TCGA-E9-A1N3-01Z-00-DX1.608fb360-17bf-4f85-b090-b8fc867831a3
+downsample [1. 1.]
+downsampled_level_dim [27291 22617]
+level_dim [27291 22617]
+name TCGA-E9-A1N3-01Z-00-DX1.608fb360-17bf-4f85-b090-b8fc867831a3
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [17824  2883] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18272  2883] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18272  3107] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AR-A1AO-01Z-00-DX1.244DEE5B-0896-452F-A14D-E290260A9D8F
+downsample [1. 1.]
+downsampled_level_dim [54740 19243]
+level_dim [54740 19243]
+name TCGA-AR-A1AO-01Z-00-DX1.244DEE5B-0896-452F-A14D-E290260A9D8F
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AN-A0G0-01Z-00-DX1.BE0BB5DF-DEDA-48D8-B5D8-2735C767F28F
+downsample [1. 1.]
+downsampled_level_dim [27608 20572]
+level_dim [27608 20572]
+name TCGA-AN-A0G0-01Z-00-DX1.BE0BB5DF-DEDA-48D8-B5D8-2735C767F28F
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-C8-A12P-01Z-00-DX1.670B5DE8-07B0-4E4C-93FA-FA3DFFCCE50D
+downsample [1. 1.]
+downsampled_level_dim [26656 29462]
+level_dim [26656 29462]
+name TCGA-C8-A12P-01Z-00-DX1.670B5DE8-07B0-4E4C-93FA-FA3DFFCCE50D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 2752 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 2976 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 2976 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3200 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3424 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3424 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3424 17580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3424 17804] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3424 18028] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3424 18252] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3648 17132] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [ 3648 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3648 18028] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3872 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3872 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4096 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4096 17804] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4320 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4320 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4320 17580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4320 17804] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4320 18476] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4544 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4544 17580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4544 18028] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4768 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4768 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4768 17580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4768 17804] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4768 18028] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4992 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4992 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4992 17580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4992 17804] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4992 18252] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5216 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5216 17580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5216 17804] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5216 18028] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [ 5440 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5440 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5440 17580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5440 17804] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5440 18028] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5664 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5664 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5664 17580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5664 17804] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5664 18028] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5888 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5888 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 6112 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 6112 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 6112 17580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 6336 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 6336 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 6336 17580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 6336 17804] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 6560 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 6560 17804] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 6784 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7008 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7232 17804] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7456 17580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7456 17804] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7680 17580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7904 17580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8128 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8128 17804] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8352 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8576 17580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8800 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9024 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9248 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9472 17804] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9920 18028] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [17312 20044] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18432 18924] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18432 19148] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18432 19372] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18432 19596] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18656 19148] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18656 19820] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [18880 18476] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18880 18700] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [19104 17132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19104 18028] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19104 18252] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19104 18476] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19104 18700] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19104 18924] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19328 18476] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19328 18924] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19552 18252] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19552 18476] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19552 18700] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [19552 19596] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [19776 18700] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19776 19372] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20000 18252] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20000 18476] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20000 18700] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20000 18924] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20000 19372] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20224 18252] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20224 18476] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20224 18700] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20224 18924] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20224 19148] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20224 19372] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20224 19820] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20448 18252] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20448 18476] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20448 18700] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20448 18924] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20448 19148] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20448 19372] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20448 20268] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20672 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20672 18252] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20672 18476] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20672 18700] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20672 19820] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20672 20044] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20896 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20896 18252] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20896 20044] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21120 17356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21120 20044] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21120 20268] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 2816 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 2816 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3040 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3040 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3264 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3488 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3712 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3936 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4384 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4384 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4608 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4608 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4832 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4832 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5280 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5280 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5280 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5504 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5504 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5728 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5952 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 6400 15329] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [ 6848 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7072 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7072 15553] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7296 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7520 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7744 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7744 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7744 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7968 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 7968 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8192 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8416 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9088 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9312 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9312 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9312 15553] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9536 13537] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9536 15553] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [ 9760 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9984 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11328 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11776 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [12000 14657] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [12224 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [12672 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [12672 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [13120 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [13568 14433] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [13568 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [13792 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [14016 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [14240 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [14464 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [14464 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [14688 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [15584 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [15808 13761] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18048 15553] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18272 13761] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18496 13537] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18496 13761] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18720 13313] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [18720 13761] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18720 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18720 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18720 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18944 13761] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18944 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18944 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [18944 14881] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [19168 13537] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19168 13761] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19168 13985] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19168 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19168 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19392 12417] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19392 13761] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19392 13985] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19392 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19392 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19392 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19616 12417] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19616 13537] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19616 13985] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19616 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19616 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19616 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19840 12641] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19840 13537] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19840 13761] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19840 13985] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19840 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19840 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19840 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19840 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20064 13761] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20064 13985] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20064 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20064 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20288 13761] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20288 13985] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20288 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20288 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20512 13089] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20512 13761] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20512 13985] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20512 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20512 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20512 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20512 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20736 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20736 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20736 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20736 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20736 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20736 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20960 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20960 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20960 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20960 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20960 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20960 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21184 13985] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21184 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21184 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21184 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21184 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21184 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21184 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21408 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21408 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21408 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21408 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21408 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21408 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21632 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21632 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21632 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21632 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21632 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21632 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21632 15553] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21856 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21856 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21856 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21856 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21856 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21856 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21856 15553] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22080 14209] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22080 14433] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22080 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22080 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22080 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22080 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22080 15553] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22304 13985] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22304 14657] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22304 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22304 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22304 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22304 15553] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22528 13089] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22528 13313] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22528 13537] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22528 13985] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22528 14881] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22528 15105] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22528 15329] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22528 15553] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22752 13089] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22752 13313] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22752 13537] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22752 13761] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [22752 13985] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22752 15553] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22976 13313] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22976 13537] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AO-A126-01Z-00-DX1.D9D6AA15-32F0-44BD-AF30-36191784FFA2
+downsample [1. 1.]
+downsampled_level_dim [57767 38616]
+level_dim [57767 38616]
+name TCGA-AO-A126-01Z-00-DX1.D9D6AA15-32F0-44BD-AF30-36191784FFA2
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A09V-01Z-00-DX1.2D6731CA-5712-4EB8-8602-E53301BF4238
+downsample [1. 1.]
+downsampled_level_dim [32000 45312]
+level_dim [32000 45312]
+name TCGA-A8-A09V-01Z-00-DX1.2D6731CA-5712-4EB8-8602-E53301BF4238
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AN-A0XW-01Z-00-DX1.811E11E7-FA67-46BB-9BC6-1FD0106B789D
+downsample [1. 1.]
+downsampled_level_dim [17928 19684]
+level_dim [17928 19684]
+name TCGA-AN-A0XW-01Z-00-DX1.811E11E7-FA67-46BB-9BC6-1FD0106B789D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/problem2_patch2/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 2720 14882] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [ 6242 13538] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 6466 15106] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [12229 15682] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [14245 15010] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3585 10305] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [4257 6721] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4481 11649] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4929 10977] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A7-A5ZX-01Z-00-DX2.02F586FE-4775-480B-8035-D6AD3386F45D
+downsample [1. 1.]
+downsampled_level_dim [64260 20671]
+level_dim [64260 20671]
+name TCGA-A7-A5ZX-01Z-00-DX2.02F586FE-4775-480B-8035-D6AD3386F45D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-PL-A8LV-01A-01-DX1.88F3D934-96C2-4652-9450-90F2E302FF6D
+downsample [1. 1.]
+downsampled_level_dim [47808  9406]
+level_dim [47808  9406]
+name TCGA-PL-A8LV-01A-01-DX1.88F3D934-96C2-4652-9450-90F2E302FF6D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A62X-01Z-00-DX1.36FDC9AA-4EBE-40E6-92C2-8471049171A4
+downsample [1. 1.]
+downsampled_level_dim [22063 35126]
+level_dim [22063 35126]
+name TCGA-AC-A62X-01Z-00-DX1.36FDC9AA-4EBE-40E6-92C2-8471049171A4
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 40 张，休息 5 秒...
+
+🎯 处理 TCGA-C8-A8HR-01Z-00-DX1.8E841CA8-1CE2-4242-AC5A-3247075CF8F4
+downsample [1. 1.]
+downsampled_level_dim [22908 27251]
+level_dim [22908 27251]
+name TCGA-C8-A8HR-01Z-00-DX1.8E841CA8-1CE2-4242-AC5A-3247075CF8F4
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AN-A0FZ-01Z-00-DX1.9555AF11-3A0D-4FE3-AE91-09DA77B175CA
+downsample [1. 1.]
+downsampled_level_dim [19040 22436]
+level_dim [19040 22436]
+name TCGA-AN-A0FZ-01Z-00-DX1.9555AF11-3A0D-4FE3-AE91-09DA77B175CA
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AO-A12E-01Z-00-DX1.F2797928-26EC-4B28-BC50-432EB380624B
+downsample [1. 1.]
+downsampled_level_dim [57767 44528]
+level_dim [57767 44528]
+name TCGA-AO-A12E-01Z-00-DX1.F2797928-26EC-4B28-BC50-432EB380624B
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A2FK-01Z-00-DX1.033F3C27-9860-4EF3-9330-37DE5EC45724
+downsample [1. 1.]
+downsampled_level_dim [14389 15664]
+level_dim [14389 15664]
+name TCGA-AC-A2FK-01Z-00-DX1.033F3C27-9860-4EF3-9330-37DE5EC45724
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-OL-A5S0-01Z-00-DX1.49A7AC9D-C186-406C-BA67-2D73DE82E13B
+downsample [1. 1.]
+downsampled_level_dim [11940 15472]
+level_dim [11940 15472]
+name TCGA-OL-A5S0-01Z-00-DX1.49A7AC9D-C186-406C-BA67-2D73DE82E13B
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AO-A12G-01Z-00-DX1.1C37E1FE-CF36-4570-A864-3813B8ADBA36
+downsample [1. 1.]
+downsampled_level_dim [33863 37140]
+level_dim [33863 37140]
+name TCGA-AO-A12G-01Z-00-DX1.1C37E1FE-CF36-4570-A864-3813B8ADBA36
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [12032 10512] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [21440 23280] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+
+🎯 处理 TCGA-AO-A124-01Z-00-DX1.E3C7B017-6154-4630-9BDE-0CAC946D0209
+downsample [1. 1.]
+downsampled_level_dim [31871 41172]
+level_dim [31871 41172]
+name TCGA-AO-A124-01Z-00-DX1.E3C7B017-6154-4630-9BDE-0CAC946D0209
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [23859 34320] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A8-A09W-01Z-00-DX1.BF33B0F9-5786-4682-B59E-DCBD33D7BB03
+downsample [1. 1.]
+downsampled_level_dim [66560 40192]
+level_dim [66560 40192]
+name TCGA-A8-A09W-01Z-00-DX1.BF33B0F9-5786-4682-B59E-DCBD33D7BB03
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [33504 14784] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AR-A0U0-01Z-00-DX1.C8BECD9F-68D9-47B1-B31E-C1C6CAE456B6
+downsample [1. 1.]
+downsampled_level_dim [36176 21121]
+level_dim [36176 21121]
+name TCGA-AR-A0U0-01Z-00-DX1.C8BECD9F-68D9-47B1-B31E-C1C6CAE456B6
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 3392 11040] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3616 10816] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3616 11040] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3840 10592] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 3840 10816] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AC-A3TN-01Z-00-DX1.F00E81C7-0CA2-49E8-A30F-DE423538E93C
+downsample [1. 1.]
+downsampled_level_dim [25420 32617]
+level_dim [25420 32617]
+name TCGA-AC-A3TN-01Z-00-DX1.F00E81C7-0CA2-49E8-A30F-DE423538E93C
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 50 张，休息 5 秒...
+
+🎯 处理 TCGA-D8-A3Z6-01Z-00-DX3.66566DB7-661D-4002-90C1-B15BF3425903
+downsample [1. 1.]
+downsampled_level_dim [28884 31863]
+level_dim [28884 31863]
+name TCGA-D8-A3Z6-01Z-00-DX3.66566DB7-661D-4002-90C1-B15BF3425903
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A0A4-01Z-00-DX1.06C38F98-F34B-49F0-AFB5-7F0086188346
+downsample [1. 1.]
+downsampled_level_dim [36096 97536]
+level_dim [36096 97536]
+name TCGA-A8-A0A4-01Z-00-DX1.06C38F98-F34B-49F0-AFB5-7F0086188346
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-D8-A27V-01Z-00-DX2.81E4FFDF-7123-4AC3-BE24-A82564A6C34C
+downsample [1. 1.]
+downsampled_level_dim [40836 33276]
+level_dim [40836 33276]
+name TCGA-D8-A27V-01Z-00-DX2.81E4FFDF-7123-4AC3-BE24-A82564A6C34C
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A2BM-01Z-00-DX1.162A9FA9-6E61-48BF-B0A5-C6C7640ABD9B
+downsample [1. 1.]
+downsampled_level_dim [44125 27444]
+level_dim [44125 27444]
+name TCGA-AC-A2BM-01Z-00-DX1.162A9FA9-6E61-48BF-B0A5-C6C7640ABD9B
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A0DB-01Z-00-DX2.6C6A5F9C-294F-4A86-A0F1-B68D4729B535
+downsample [1. 1.]
+downsampled_level_dim [85680 20052]
+level_dim [85680 20052]
+name TCGA-A7-A0DB-01Z-00-DX2.6C6A5F9C-294F-4A86-A0F1-B68D4729B535
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AN-A0FW-01Z-00-DX1.5EEDFC71-6ABE-4189-8C45-2127403A8F04
+downsample [1. 1.]
+downsampled_level_dim [32368 19845]
+level_dim [32368 19845]
+name TCGA-AN-A0FW-01Z-00-DX1.5EEDFC71-6ABE-4189-8C45-2127403A8F04
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A5XS-01Z-00-DX1.E5F2481E-9314-4B20-84B7-370EF82AF4BB
+downsample [1. 1.]
+downsampled_level_dim [16307 13398]
+level_dim [16307 13398]
+name TCGA-AC-A5XS-01Z-00-DX1.E5F2481E-9314-4B20-84B7-370EF82AF4BB
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A3EH-01Z-00-DX1.30160436-4DE9-4F99-87E2-214E3CA47289
+downsample [1. 1.]
+downsampled_level_dim [22908 15737]
+level_dim [22908 15737]
+name TCGA-AC-A3EH-01Z-00-DX1.30160436-4DE9-4F99-87E2-214E3CA47289
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-E9-A54X-01Z-00-DX1.9BF3DE15-FA5A-459D-9B2E-8EB92F34228D
+downsample [1. 1.]
+downsampled_level_dim [23324 27045]
+level_dim [23324 27045]
+name TCGA-E9-A54X-01Z-00-DX1.9BF3DE15-FA5A-459D-9B2E-8EB92F34228D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A3W5-01Z-00-DX1.522F702C-776E-45F1-84D3-1648DF04137C
+downsample [1. 1.]
+downsampled_level_dim [15936  6674]
+level_dim [15936  6674]
+name TCGA-AC-A3W5-01Z-00-DX1.522F702C-776E-45F1-84D3-1648DF04137C
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 60 张，休息 5 秒...
+
+🎯 处理 TCGA-AO-A03R-01Z-00-DX1.DC317201-7F22-4C4A-86A5-ED82C37757C8
+downsample [1. 1.]
+downsampled_level_dim [47807 34036]
+level_dim [47807 34036]
+name TCGA-AO-A03R-01Z-00-DX1.DC317201-7F22-4C4A-86A5-ED82C37757C8
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [22277 27520] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+
+🎯 处理 TCGA-E9-A3QA-01Z-00-DX1.9D664AF3-9ABD-4EED-B826-4C4FBFC33F3E
+downsample [1. 1.]
+downsampled_level_dim [44744 30768]
+level_dim [44744 30768]
+name TCGA-E9-A3QA-01Z-00-DX1.9D664AF3-9ABD-4EED-B826-4C4FBFC33F3E
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [22561  9058] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [22561  9282] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [34433  5922] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [34433  7938] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [34657  5922] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [34657  6146] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [34657  6370] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AC-A2QI-01Z-00-DX1.977549F4-D866-4465-85FB-5C916282A488
+downsample [1. 1.]
+downsampled_level_dim [20468 25278]
+level_dim [20468 25278]
+name TCGA-AC-A2QI-01Z-00-DX1.977549F4-D866-4465-85FB-5C916282A488
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 7073 19168] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [ 9089 12224] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-PL-A8LY-01A-01-DX1.32047D5E-8A42-480A-B2B8-A56B47B949FD
+downsample [1. 1.]
+downsampled_level_dim [47808 11863]
+level_dim [47808 11863]
+name TCGA-PL-A8LY-01A-01-DX1.32047D5E-8A42-480A-B2B8-A56B47B949FD
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [4352 6982] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A7-A6VW-01Z-00-DX1.1BC4790C-DB45-4A3D-9C97-92C92C03FF60
+downsample [1. 1.]
+downsampled_level_dim [68544 15731]
+level_dim [68544 15731]
+name TCGA-A7-A6VW-01Z-00-DX1.1BC4790C-DB45-4A3D-9C97-92C92C03FF60
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A13G-01Z-00-DX2.72EF429E-75A7-4D1B-AFFC-8767CB213CDA
+downsample [1. 1.]
+downsampled_level_dim [10472 39386]
+level_dim [10472 39386]
+name TCGA-A7-A13G-01Z-00-DX2.72EF429E-75A7-4D1B-AFFC-8767CB213CDA
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AN-A041-01Z-00-DX1.96D3628B-FB6E-4A41-A5E8-8896B0657F1C
+downsample [1. 1.]
+downsampled_level_dim [29880 25898]
+level_dim [29880 25898]
+name TCGA-AN-A041-01Z-00-DX1.96D3628B-FB6E-4A41-A5E8-8896B0657F1C
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A23H-01Z-00-DX1.8E0AE339-1047-4CA5-BFC5-37A3B10FD8B5
+downsample [1. 1.]
+downsampled_level_dim [16932 20388]
+level_dim [16932 20388]
+name TCGA-AC-A23H-01Z-00-DX1.8E0AE339-1047-4CA5-BFC5-37A3B10FD8B5
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-E2-A15I-01Z-00-DX1.DFF60A40-B03D-438F-A233-06132A213619
+downsample [1. 1.]
+downsampled_level_dim [44268 21830]
+level_dim [44268 21830]
+name TCGA-E2-A15I-01Z-00-DX1.DFF60A40-B03D-438F-A233-06132A213619
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-C8-A1HM-01Z-00-DX1.F93C3F56-3AA6-4D38-B51E-4694CBEA3830
+downsample [1. 1.]
+downsampled_level_dim [35700 27834]
+level_dim [35700 27834]
+name TCGA-C8-A1HM-01Z-00-DX1.F93C3F56-3AA6-4D38-B51E-4694CBEA3830
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 70 张，休息 5 秒...
+
+🎯 处理 TCGA-A7-A3IZ-01Z-00-DX1.7437130B-DF49-40C8-ABCD-FF9364B9B1B0
+downsample [1. 1.]
+downsampled_level_dim [18564 16373]
+level_dim [18564 16373]
+name TCGA-A7-A3IZ-01Z-00-DX1.7437130B-DF49-40C8-ABCD-FF9364B9B1B0
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A6NO-01Z-00-DX1.61B7F48C-6D6E-4C1B-B236-DD130ECBDA9D
+downsample [1. 1.]
+downsampled_level_dim [28777 19586]
+level_dim [28777 19586]
+name TCGA-AC-A6NO-01Z-00-DX1.61B7F48C-6D6E-4C1B-B236-DD130ECBDA9D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A096-01Z-00-DX1.FCECFB0D-4E02-4C69-A0FE-7D6C7F9FEB07
+downsample [1. 1.]
+downsampled_level_dim [37632 41216]
+level_dim [37632 41216]
+name TCGA-A8-A096-01Z-00-DX1.FCECFB0D-4E02-4C69-A0FE-7D6C7F9FEB07
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-D8-A27I-01Z-00-DX1.ACAE0048-7AF0-41C9-992B-6ACDABF80B1C
+downsample [1. 1.]
+downsampled_level_dim [37604 31561]
+level_dim [37604 31561]
+name TCGA-D8-A27I-01Z-00-DX1.ACAE0048-7AF0-41C9-992B-6ACDABF80B1C
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A7VB-01Z-00-DX1.62D7FDB3-280D-43B2-92EA-AB810384B0B7
+downsample [1. 1.]
+downsampled_level_dim [21103 25483]
+level_dim [21103 25483]
+name TCGA-AC-A7VB-01Z-00-DX1.62D7FDB3-280D-43B2-92EA-AB810384B0B7
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-PE-A5DE-01Z-00-DX1.88B354F2-5485-44AA-A057-89E40B988F69
+downsample [1. 1.]
+downsampled_level_dim [18564 21823]
+level_dim [18564 21823]
+name TCGA-PE-A5DE-01Z-00-DX1.88B354F2-5485-44AA-A057-89E40B988F69
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A2-A0CQ-01Z-00-DX1.4E5FB4E5-A08C-4C87-A3BE-0640A95AE649
+downsample [1. 1.]
+downsampled_level_dim [69425 21348]
+level_dim [69425 21348]
+name TCGA-A2-A0CQ-01Z-00-DX1.4E5FB4E5-A08C-4C87-A3BE-0640A95AE649
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AR-A2LE-01Z-00-DX1.E8E1FC5C-9A4A-463F-81D7-E9A8AF43EAD9
+downsample [1. 1.]
+downsampled_level_dim [38080 23134]
+level_dim [38080 23134]
+name TCGA-AR-A2LE-01Z-00-DX1.E8E1FC5C-9A4A-463F-81D7-E9A8AF43EAD9
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AR-A24X-01Z-00-DX1.304BF142-B01A-4AE9-B98C-FB3DE3BEAE57
+downsample [1. 1.]
+downsampled_level_dim [29036 23114]
+level_dim [29036 23114]
+name TCGA-AR-A24X-01Z-00-DX1.304BF142-B01A-4AE9-B98C-FB3DE3BEAE57
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [18081  3360] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-BH-A1F0-01Z-00-DX1.E1557A67-230A-4337-AEC8-158258A917FF
+downsample [1. 1.]
+downsampled_level_dim [31684 23881]
+level_dim [31684 23881]
+name TCGA-BH-A1F0-01Z-00-DX1.E1557A67-230A-4337-AEC8-158258A917FF
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 80 张，休息 5 秒...
+
+🎯 处理 TCGA-A7-A13G-01Z-00-DX1.C258C545-8C1F-41D4-846F-962A746CBDFB
+downsample [1. 1.]
+downsampled_level_dim [10948 38396]
+level_dim [10948 38396]
+name TCGA-A7-A13G-01Z-00-DX1.C258C545-8C1F-41D4-846F-962A746CBDFB
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A2FG-01Z-00-DX1.0F13DE40-9F7A-42C6-AB3D-02E8521B690A
+downsample [1. 1.]
+downsampled_level_dim [19665 14186]
+level_dim [19665 14186]
+name TCGA-AC-A2FG-01Z-00-DX1.0F13DE40-9F7A-42C6-AB3D-02E8521B690A
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A26G-01Z-00-DX1.29A27673-A16D-4044-BCCF-14BF6236D7D3
+downsample [1. 1.]
+downsampled_level_dim [79968 22738]
+level_dim [79968 22738]
+name TCGA-A7-A26G-01Z-00-DX1.29A27673-A16D-4044-BCCF-14BF6236D7D3
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A3J0-01Z-00-DX1.59DB32BC-F59C-43B3-8DDD-4A728EBA8AB8
+downsample [1. 1.]
+downsampled_level_dim [65212 12168]
+level_dim [65212 12168]
+name TCGA-A7-A3J0-01Z-00-DX1.59DB32BC-F59C-43B3-8DDD-4A728EBA8AB8
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AQ-A04H-01Z-00-DX1.5AC1E459-EF27-401D-98FD-0AC16559AF17
+downsample [1. 1.]
+downsampled_level_dim [67209 19504]
+level_dim [67209 19504]
+name TCGA-AQ-A04H-01Z-00-DX1.5AC1E459-EF27-401D-98FD-0AC16559AF17
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A091-01Z-00-DX1.1F38CADB-A093-416E-A8A8-31E61CD730BA
+downsample [1. 1.]
+downsampled_level_dim [46336 39680]
+level_dim [46336 39680]
+name TCGA-A8-A091-01Z-00-DX1.1F38CADB-A093-416E-A8A8-31E61CD730BA
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [37904 23040] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-E9-A1NH-01Z-00-DX1.20FF11B7-DAF0-41C2-B7C5-449BA5268EC0
+downsample [1. 1.]
+downsampled_level_dim [24897 30665]
+level_dim [24897 30665]
+name TCGA-E9-A1NH-01Z-00-DX1.20FF11B7-DAF0-41C2-B7C5-449BA5268EC0
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AN-A0XL-01Z-00-DX1.E90AA056-51DC-4A6B-96EB-A0B707496912
+downsample [1. 1.]
+downsampled_level_dim [32868 23010]
+level_dim [32868 23010]
+name TCGA-AN-A0XL-01Z-00-DX1.E90AA056-51DC-4A6B-96EB-A0B707496912
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [14176  7872] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+
+🎯 处理 TCGA-A7-A0CD-01Z-00-DX2.609CED8D-5947-4753-A75B-73A8343B47EC
+downsample [1. 1.]
+downsampled_level_dim [46648 22727]
+level_dim [46648 22727]
+name TCGA-A7-A0CD-01Z-00-DX2.609CED8D-5947-4753-A75B-73A8343B47EC
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/problem3_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [38515 19747] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [41875 14147] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [45683 16163] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [15205 14018] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [17669  9762] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [10244  6882] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A7-A4SD-01Z-00-DX1.677152B3-17B2-42DB-AEEC-C9509ACCE831
+downsample [1. 1.]
+downsampled_level_dim [67116 20597]
+level_dim [67116 20597]
+name TCGA-A7-A4SD-01Z-00-DX1.677152B3-17B2-42DB-AEEC-C9509ACCE831
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 90 张，休息 5 秒...
+
+🎯 处理 TCGA-AC-A23C-01Z-00-DX1.0E67C785-83D3-49AF-B600-FB5B909AE6ED
+downsample [1. 1.]
+downsampled_level_dim [ 9960 13210]
+level_dim [ 9960 13210]
+name TCGA-AC-A23C-01Z-00-DX1.0E67C785-83D3-49AF-B600-FB5B909AE6ED
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-GI-A2C8-01Z-00-DX1.09BD8AC9-645A-4C8B-9B36-77D833BDBA09
+downsample [1. 1.]
+downsampled_level_dim [31892 19656]
+level_dim [31892 19656]
+name TCGA-GI-A2C8-01Z-00-DX1.09BD8AC9-645A-4C8B-9B36-77D833BDBA09
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A090-01Z-00-DX1.01574070-D65E-486F-B69D-0F8E3816D057
+downsample [1. 1.]
+downsampled_level_dim [52480 37632]
+level_dim [52480 37632]
+name TCGA-A8-A090-01Z-00-DX1.01574070-D65E-486F-B69D-0F8E3816D057
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AN-A0XO-01Z-00-DX1.204E554E-B1A8-41AD-8E39-62484DF4E3CD
+downsample [1. 1.]
+downsampled_level_dim [28884 25413]
+level_dim [28884 25413]
+name TCGA-AN-A0XO-01Z-00-DX1.204E554E-B1A8-41AD-8E39-62484DF4E3CD
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-D8-A1XA-01Z-00-DX1.36A807F0-2D35-4CE3-8A27-CC59181B1A3D
+downsample [1. 1.]
+downsampled_level_dim [34748 33956]
+level_dim [34748 33956]
+name TCGA-D8-A1XA-01Z-00-DX1.36A807F0-2D35-4CE3-8A27-CC59181B1A3D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A2BK-01Z-00-DX1.A3A1F275-9CDC-48BA-BB81-BCA6F02ACA94
+downsample [1. 1.]
+downsampled_level_dim [31655 15171]
+level_dim [31655 15171]
+name TCGA-AC-A2BK-01Z-00-DX1.A3A1F275-9CDC-48BA-BB81-BCA6F02ACA94
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A095-01Z-00-DX1.97072E53-7323-4836-9D58-22B7C346A7CE
+downsample [1. 1.]
+downsampled_level_dim [59648 41728]
+level_dim [59648 41728]
+name TCGA-A8-A095-01Z-00-DX1.97072E53-7323-4836-9D58-22B7C346A7CE
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A2-A0D3-01Z-00-DX1.D18CE1C0-291D-41C1-8F71-2A0551F8C661
+downsample [1. 1.]
+downsampled_level_dim [51847 32932]
+level_dim [51847 32932]
+name TCGA-A2-A0D3-01Z-00-DX1.D18CE1C0-291D-41C1-8F71-2A0551F8C661
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/problem1_patch2/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A4SE-01Z-00-DX1.16BC8401-E40E-4A1A-9BD9-12735C9AE3F6
+downsample [1. 1.]
+downsampled_level_dim [58072 20136]
+level_dim [58072 20136]
+name TCGA-A7-A4SE-01Z-00-DX1.16BC8401-E40E-4A1A-9BD9-12735C9AE3F6
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A06R-01Z-00-DX1.41476D0D-BA72-4FB8-B143-9EB679F26D28
+downsample [1. 1.]
+downsampled_level_dim [43264 34560]
+level_dim [43264 34560]
+name TCGA-A8-A06R-01Z-00-DX1.41476D0D-BA72-4FB8-B143-9EB679F26D28
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 8848 25696] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11536 25472] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [29504 15840] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [29728 15840] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+😴 已处理 100 张，休息 5 秒...
+
+🎯 处理 TCGA-C8-A26X-01Z-00-DX1.FBD86F91-BAD7-4484-8D50-202340FBF242
+downsample [1. 1.]
+downsampled_level_dim [25228 30026]
+level_dim [25228 30026]
+name TCGA-C8-A26X-01Z-00-DX1.FBD86F91-BAD7-4484-8D50-202340FBF242
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A08F-01Z-00-DX1.9D2222F6-1425-46FD-BC94-728EF835FAC2
+downsample [1. 1.]
+downsampled_level_dim [56576 38656]
+level_dim [56576 38656]
+name TCGA-A8-A08F-01Z-00-DX1.9D2222F6-1425-46FD-BC94-728EF835FAC2
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AR-A0TX-01Z-00-DX1.5BEA4E65-8CEC-49B2-9F29-DBE53E8ED46E
+downsample [1. 1.]
+downsampled_level_dim [35700 33542]
+level_dim [35700 33542]
+name TCGA-AR-A0TX-01Z-00-DX1.5BEA4E65-8CEC-49B2-9F29-DBE53E8ED46E
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [22603 16898] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [23499 16450] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A8-A093-01Z-00-DX1.1C8056D1-11CD-482D-9A23-3A9D1B4E63F0
+downsample [1. 1.]
+downsampled_level_dim [46848 87808]
+level_dim [46848 87808]
+name TCGA-A8-A093-01Z-00-DX1.1C8056D1-11CD-482D-9A23-3A9D1B4E63F0
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A2-A04Y-01Z-00-DX1.4DC97AD6-4806-4A3A-A998-FD36F93590A4
+downsample [1. 1.]
+downsampled_level_dim [46566 33196]
+level_dim [46566 33196]
+name TCGA-A2-A04Y-01Z-00-DX1.4DC97AD6-4806-4A3A-A998-FD36F93590A4
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A2-A0YH-01Z-00-DX1.FBA5E711-8275-45B3-BC20-5A786EE23548
+downsample [1. 1.]
+downsampled_level_dim [34564 27791]
+level_dim [34564 27791]
+name TCGA-A2-A0YH-01Z-00-DX1.FBA5E711-8275-45B3-BC20-5A786EE23548
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A09T-01Z-00-DX1.4183BBA4-AF11-4602-9EC2-35083C34A393
+downsample [1. 1.]
+downsampled_level_dim [37120 32512]
+level_dim [37120 32512]
+name TCGA-A8-A09T-01Z-00-DX1.4183BBA4-AF11-4602-9EC2-35083C34A393
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A13E-01Z-00-DX2.1E1262AE-A32D-4814-94A5-D951CA8BA35D
+downsample [1. 1.]
+downsampled_level_dim [62356 26775]
+level_dim [62356 26775]
+name TCGA-A7-A13E-01Z-00-DX2.1E1262AE-A32D-4814-94A5-D951CA8BA35D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-E2-A1L7-01Z-00-DX1.BE796CD2-2E81-44E8-8CA2-85B4D2A31B64
+downsample [1. 1.]
+downsampled_level_dim [40936 23387]
+level_dim [40936 23387]
+name TCGA-E2-A1L7-01Z-00-DX1.BE796CD2-2E81-44E8-8CA2-85B4D2A31B64
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A09A-01Z-00-DX1.78773A6C-BA8A-46BE-AC2A-9C6FDAB45622
+downsample [1. 1.]
+downsampled_level_dim [30464 59648]
+level_dim [30464 59648]
+name TCGA-A8-A09A-01Z-00-DX1.78773A6C-BA8A-46BE-AC2A-9C6FDAB45622
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 110 张，休息 5 秒...
+
+🎯 处理 TCGA-PL-A8LV-01A-02-DX2.346FF42B-2363-4B37-8884-12D5F841842C
+downsample [1. 1.]
+downsampled_level_dim [47808 14242]
+level_dim [47808 14242]
+name TCGA-PL-A8LV-01A-02-DX2.346FF42B-2363-4B37-8884-12D5F841842C
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [43072  5728] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [43072  5952] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AN-A0XU-01Z-00-DX1.6B0DD0FF-A20D-4BA2-8D48-FC357BA5313F
+downsample [1. 1.]
+downsampled_level_dim [33864 25101]
+level_dim [33864 25101]
+name TCGA-AN-A0XU-01Z-00-DX1.6B0DD0FF-A20D-4BA2-8D48-FC357BA5313F
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AR-A0TQ-01Z-00-DX1.2BEA298C-6B3D-4133-ADBC-769E62CEFFA0
+downsample [1. 1.]
+downsampled_level_dim [27132 27898]
+level_dim [27132 27898]
+name TCGA-AR-A0TQ-01Z-00-DX1.2BEA298C-6B3D-4133-ADBC-769E62CEFFA0
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [11682 19905] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11906 19905] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A8-A08X-01Z-00-DX1.01FB49CC-6B8E-4317-8C42-6B6D81187A40
+downsample [1. 1.]
+downsampled_level_dim [38144 33536]
+level_dim [38144 33536]
+name TCGA-A8-A08X-01Z-00-DX1.01FB49CC-6B8E-4317-8C42-6B6D81187A40
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A09C-01Z-00-DX1.19E0C0E9-0ED6-4E3A-95FE-A5778F5DDBCD
+downsample [1. 1.]
+downsampled_level_dim [71680 54016]
+level_dim [71680 54016]
+name TCGA-A8-A09C-01Z-00-DX1.19E0C0E9-0ED6-4E3A-95FE-A5778F5DDBCD
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AO-A0JG-01Z-00-DX1.FA785D56-B4FF-4CC3-A631-5C748E8E0558
+downsample [1. 1.]
+downsampled_level_dim [39839 27042]
+level_dim [39839 27042]
+name TCGA-AO-A0JG-01Z-00-DX1.FA785D56-B4FF-4CC3-A631-5C748E8E0558
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [17824  5488] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22976  8400] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [26336 15344] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [26560 15344] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [26784 19152] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AC-A3QP-01Z-00-DX1.4B97E53E-1069-40C5-A062-C988663B37DD
+downsample [1. 1.]
+downsampled_level_dim [22908 21483]
+level_dim [22908 21483]
+name TCGA-AC-A3QP-01Z-00-DX1.4B97E53E-1069-40C5-A062-C988663B37DD
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 4032 15104] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4032 15328] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4256 15104] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 4256 15328] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AO-A03P-01Z-00-DX1.D34DA321-D8E3-4D68-BCE2-4A8B72B3D0AE
+downsample [1. 1.]
+downsampled_level_dim [41831 45512]
+level_dim [41831 45512]
+name TCGA-AO-A03P-01Z-00-DX1.D34DA321-D8E3-4D68-BCE2-4A8B72B3D0AE
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A56D-01Z-00-DX1.87D9CCF4-04EE-46D2-B7FC-A83561D7752C
+downsample [1. 1.]
+downsampled_level_dim [90916 21760]
+level_dim [90916 21760]
+name TCGA-A7-A56D-01Z-00-DX1.87D9CCF4-04EE-46D2-B7FC-A83561D7752C
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A081-01Z-00-DX1.06D727F7-4B41-419B-A251-3D804235ACE5
+downsample [1. 1.]
+downsampled_level_dim [28928 31488]
+level_dim [28928 31488]
+name TCGA-A8-A081-01Z-00-DX1.06D727F7-4B41-419B-A251-3D804235ACE5
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 120 张，休息 5 秒...
+
+🎯 处理 TCGA-E9-A5UP-01Z-00-DX1.135466CC-601C-48B2-935D-42F8D7C4CDF7
+downsample [1. 1.]
+downsampled_level_dim [44049 23538]
+level_dim [44049 23538]
+name TCGA-E9-A5UP-01Z-00-DX1.135466CC-601C-48B2-935D-42F8D7C4CDF7
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [40387  7425] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [40835  6529] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [41059  6529] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [41059  6753] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [41059  7201] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AN-A046-01Z-00-DX1.C529B94F-AFE3-4701-BC98-5D6EDF7B82C0
+downsample [1. 1.]
+downsampled_level_dim [51792 21360]
+level_dim [51792 21360]
+name TCGA-AN-A046-01Z-00-DX1.C529B94F-AFE3-4701-BC98-5D6EDF7B82C0
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-OL-A5RX-01Z-00-DX1.15A0D4F4-2744-4D44-8883-27FF83D9C824
+downsample [1. 1.]
+downsampled_level_dim [19327 23945]
+level_dim [19327 23945]
+name TCGA-OL-A5RX-01Z-00-DX1.15A0D4F4-2744-4D44-8883-27FF83D9C824
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-D8-A140-01Z-00-DX1.5B9382C0-332C-4FBF-82CD-B9453D02B815
+downsample [1. 1.]
+downsampled_level_dim [40936 30677]
+level_dim [40936 30677]
+name TCGA-D8-A140-01Z-00-DX1.5B9382C0-332C-4FBF-82CD-B9453D02B815
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-BH-A18G-01Z-00-DX1.DB2B5819-CE83-4E07-BD03-2CD9CF2E246C
+downsample [1. 1.]
+downsampled_level_dim [24897 21356]
+level_dim [24897 21356]
+name TCGA-BH-A18G-01Z-00-DX1.DB2B5819-CE83-4E07-BD03-2CD9CF2E246C
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-OL-A5RY-01Z-00-DX1.AE4E9D74-FC1C-4C1E-AE6D-5DF38899BBA6
+downsample [1. 1.]
+downsampled_level_dim [21965 22826]
+level_dim [21965 22826]
+name TCGA-OL-A5RY-01Z-00-DX1.AE4E9D74-FC1C-4C1E-AE6D-5DF38899BBA6
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AO-A0J2-01Z-00-DX1.7C9FEC7B-6040-4C58-9563-D10C0D7AC72E
+downsample [1. 1.]
+downsampled_level_dim [39839 26294]
+level_dim [39839 26294]
+name TCGA-AO-A0J2-01Z-00-DX1.7C9FEC7B-6040-4C58-9563-D10C0D7AC72E
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-OL-A5RU-01Z-00-DX1.A48CAF2D-9310-4611-B27D-400F3A324607
+downsample [1. 1.]
+downsampled_level_dim [20687 20142]
+level_dim [20687 20142]
+name TCGA-OL-A5RU-01Z-00-DX1.A48CAF2D-9310-4611-B27D-400F3A324607
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A07F-01Z-00-DX1.E6FE5B3A-A412-4E7B-A710-7DFD3596F4E3
+downsample [1. 1.]
+downsampled_level_dim [75776 61696]
+level_dim [75776 61696]
+name TCGA-A8-A07F-01Z-00-DX1.E6FE5B3A-A412-4E7B-A710-7DFD3596F4E3
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AO-A1KQ-01Z-00-DX1.CAB7D9A5-7030-4A33-BE51-9B04D67A7676
+downsample [1. 1.]
+downsampled_level_dim [51930 31628]
+level_dim [51930 31628]
+name TCGA-AO-A1KQ-01Z-00-DX1.CAB7D9A5-7030-4A33-BE51-9B04D67A7676
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 8048 15456] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8048 15680] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [28432 10976] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+😴 已处理 130 张，休息 5 秒...
+
+🎯 处理 TCGA-AC-A62Y-01Z-00-DX1.5075F4DA-488C-40AD-BD73-6DE8953E1864
+downsample [1. 1.]
+downsampled_level_dim [16787 18091]
+level_dim [16787 18091]
+name TCGA-AC-A62Y-01Z-00-DX1.5075F4DA-488C-40AD-BD73-6DE8953E1864
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AR-A0TZ-01Z-00-DX1.2D58BE38-03F6-4310-8E06-F1A523FB0904
+downsample [1. 1.]
+downsampled_level_dim [22848 33177]
+level_dim [22848 33177]
+name TCGA-AR-A0TZ-01Z-00-DX1.2D58BE38-03F6-4310-8E06-F1A523FB0904
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A0CH-01Z-00-DX2.81DDF423-FCA8-46CA-83A4-2E80B611844D
+downsample [1. 1.]
+downsampled_level_dim [15232 45132]
+level_dim [15232 45132]
+name TCGA-A7-A0CH-01Z-00-DX2.81DDF423-FCA8-46CA-83A4-2E80B611844D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AN-A0FY-01Z-00-DX1.25F5E2A1-F92C-4FE1-BD90-0CDDE50DC066
+downsample [1. 1.]
+downsampled_level_dim [23800 21873]
+level_dim [23800 21873]
+name TCGA-AN-A0FY-01Z-00-DX1.25F5E2A1-F92C-4FE1-BD90-0CDDE50DC066
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AN-A03Y-01Z-00-DX1.074C48E5-ED69-40AE-8709-444898122BF4
+downsample [1. 1.]
+downsampled_level_dim [59760 18803]
+level_dim [59760 18803]
+name TCGA-AN-A03Y-01Z-00-DX1.074C48E5-ED69-40AE-8709-444898122BF4
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [44138  4547] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [47050  5891] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [47274  6115] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [47498  6115] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [47498  6339] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [47722  6115] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [47722  6339] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [47946  6339] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [47946  6563] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [47946 15299] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [53994 11267] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [54218 11267] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A2-A04Q-01Z-00-DX1.DF7ED6B6-7701-486D-9007-F26B6F0682C4
+downsample [1. 1.]
+downsampled_level_dim [45126 23092]
+level_dim [45126 23092]
+name TCGA-A2-A04Q-01Z-00-DX1.DF7ED6B6-7701-486D-9007-F26B6F0682C4
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [11008  6144] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11232  6144] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AN-A0AS-01Z-00-DX1.51E551E9-E5F4-4C94-9B25-71DA41109E92
+downsample [1. 1.]
+downsampled_level_dim [29512 21969]
+level_dim [29512 21969]
+name TCGA-AN-A0AS-01Z-00-DX1.51E551E9-E5F4-4C94-9B25-71DA41109E92
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-PE-A5DC-01Z-00-DX1.8E6953AD-C14A-43F5-B062-E31AB13C7BDF
+downsample [1. 1.]
+downsampled_level_dim [29512 32932]
+level_dim [29512 32932]
+name TCGA-PE-A5DC-01Z-00-DX1.8E6953AD-C14A-43F5-B062-E31AB13C7BDF
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A06O-01Z-00-DX1.FA4495B2-5B13-4448-ADCB-EF5316E0955B
+downsample [1. 1.]
+downsampled_level_dim [45312 53504]
+level_dim [45312 53504]
+name TCGA-A8-A06O-01Z-00-DX1.FA4495B2-5B13-4448-ADCB-EF5316E0955B
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-PL-A8LX-01A-01-DX1.9646D69F-A764-4246-9243-67A63006DE96
+downsample [1. 1.]
+downsampled_level_dim [46812 13054]
+level_dim [46812 13054]
+name TCGA-PL-A8LX-01A-01-DX1.9646D69F-A764-4246-9243-67A63006DE96
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 140 张，休息 5 秒...
+
+🎯 处理 TCGA-AC-A5EH-01Z-00-DX1.DF59B26B-379F-4047-B7AE-4493810D30A0
+downsample [1. 1.]
+downsampled_level_dim [29737 27961]
+level_dim [29737 27961]
+name TCGA-AC-A5EH-01Z-00-DX1.DF59B26B-379F-4047-B7AE-4493810D30A0
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A2-A3KD-01Z-00-DX1.E400D529-A0D1-4C78-AD5C-33EB0508B128
+downsample [1. 1.]
+downsampled_level_dim [37604 42047]
+level_dim [37604 42047]
+name TCGA-A2-A3KD-01Z-00-DX1.E400D529-A0D1-4C78-AD5C-33EB0508B128
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A07B-01Z-00-DX1.950B5E4E-C5F0-4445-9F88-E8C32CDFE6DA
+downsample [1. 1.]
+downsampled_level_dim [42752 38144]
+level_dim [42752 38144]
+name TCGA-A8-A07B-01Z-00-DX1.950B5E4E-C5F0-4445-9F88-E8C32CDFE6DA
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-E9-A247-01Z-00-DX1.3B2DF1CB-054A-44C4-9AD5-D8FA6D386A93
+downsample [1. 1.]
+downsampled_level_dim [32844 32813]
+level_dim [32844 32813]
+name TCGA-E9-A247-01Z-00-DX1.3B2DF1CB-054A-44C4-9AD5-D8FA6D386A93
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A2FB-01Z-00-DX1.A4D93E32-BBD7-45E4-8ACF-3724B059ECBC
+downsample [1. 1.]
+downsampled_level_dim [31655 13397]
+level_dim [31655 13397]
+name TCGA-AC-A2FB-01Z-00-DX1.A4D93E32-BBD7-45E4-8ACF-3724B059ECBC
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AR-A1AM-01Z-00-DX1.B3F006D9-9386-41E5-B0B1-B0832EE104A0
+downsample [1. 1.]
+downsampled_level_dim [48837 25933]
+level_dim [48837 25933]
+name TCGA-AR-A1AM-01Z-00-DX1.B3F006D9-9386-41E5-B0B1-B0832EE104A0
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [11296 18471] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11296 18695] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11520 18471] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11520 18695] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11744 18471] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11968 18247] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+
+🎯 处理 TCGA-AN-A0XS-01Z-00-DX1.B4D4B73E-2912-4B2E-B18A-FBC35F8160D3
+downsample [1. 1.]
+downsampled_level_dim [34860 21165]
+level_dim [34860 21165]
+name TCGA-AN-A0XS-01Z-00-DX1.B4D4B73E-2912-4B2E-B18A-FBC35F8160D3
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A13D-01Z-00-DX1.D206783C-FA6A-4B6A-B3AA-4132A2C9626B
+downsample [1. 1.]
+downsampled_level_dim [52360 21041]
+level_dim [52360 21041]
+name TCGA-A7-A13D-01Z-00-DX1.D206783C-FA6A-4B6A-B3AA-4132A2C9626B
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A0AD-01Z-00-DX1.A831FB53-7605-4138-9341-6BBCA284441C
+downsample [1. 1.]
+downsampled_level_dim [42240 48896]
+level_dim [42240 48896]
+name TCGA-A8-A0AD-01Z-00-DX1.A831FB53-7605-4138-9341-6BBCA284441C
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A0CH-01Z-00-DX1.48ADDD0B-527A-404C-B794-7D7D35BF861F
+downsample [1. 1.]
+downsampled_level_dim [18564 47286]
+level_dim [18564 47286]
+name TCGA-A7-A0CH-01Z-00-DX1.48ADDD0B-527A-404C-B794-7D7D35BF861F
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 150 张，休息 5 秒...
+
+🎯 处理 TCGA-AC-A3QQ-01Z-00-DX1.86463263-AB12-49FB-8967-D5FD1F7D221A
+downsample [1. 1.]
+downsampled_level_dim [17746 15310]
+level_dim [17746 15310]
+name TCGA-AC-A3QQ-01Z-00-DX1.86463263-AB12-49FB-8967-D5FD1F7D221A
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A08B-01Z-00-DX1.416316FD-E8BF-402C-939A-08920F08A181
+downsample [1. 1.]
+downsampled_level_dim [70656 90368]
+level_dim [70656 90368]
+name TCGA-A8-A08B-01Z-00-DX1.416316FD-E8BF-402C-939A-08920F08A181
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A13H-01Z-00-DX1.FCB33A3C-6209-474C-83C1-02551F242937
+downsample [1. 1.]
+downsampled_level_dim [68544 15490]
+level_dim [68544 15490]
+name TCGA-A7-A13H-01Z-00-DX1.FCB33A3C-6209-474C-83C1-02551F242937
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A0A9-01Z-00-DX1.16524DDD-539D-4E47-9A8F-1B910D4FEC2D
+downsample [1. 1.]
+downsampled_level_dim [38144 26368]
+level_dim [38144 26368]
+name TCGA-A8-A0A9-01Z-00-DX1.16524DDD-539D-4E47-9A8F-1B910D4FEC2D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A2FO-01Z-00-DX1.46929316-D7ED-4D69-B068-409BFFBCEC4D
+downsample [1. 1.]
+downsampled_level_dim [13909 15658]
+level_dim [13909 15658]
+name TCGA-AC-A2FO-01Z-00-DX1.46929316-D7ED-4D69-B068-409BFFBCEC4D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A06Q-01Z-00-DX1.622AC6E4-DB1A-4C8D-8185-52D4FD1F30B4
+downsample [1. 1.]
+downsampled_level_dim [50432 34048]
+level_dim [50432 34048]
+name TCGA-A8-A06Q-01Z-00-DX1.622AC6E4-DB1A-4C8D-8185-52D4FD1F30B4
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A08S-01Z-00-DX1.C0E044C2-FC3F-4E3D-A779-A725FF375F21
+downsample [1. 1.]
+downsampled_level_dim [52480 43264]
+level_dim [52480 43264]
+name TCGA-A8-A08S-01Z-00-DX1.C0E044C2-FC3F-4E3D-A779-A725FF375F21
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [16384 22016] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AC-A8OP-01Z-00-DX1.A2AF501D-7DCD-4BE7-93A4-EBCAF0C0D54E
+downsample [1. 1.]
+downsampled_level_dim [21583 26626]
+level_dim [21583 26626]
+name TCGA-AC-A8OP-01Z-00-DX1.A2AF501D-7DCD-4BE7-93A4-EBCAF0C0D54E
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-E2-A1LG-01Z-00-DX1.8ff0fdd8-e5d5-4ff8-8707-4a760aaa5d36
+downsample [1. 1.]
+downsampled_level_dim [51884 38401]
+level_dim [51884 38401]
+name TCGA-E2-A1LG-01Z-00-DX1.8ff0fdd8-e5d5-4ff8-8707-4a760aaa5d36
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [26848  3424] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [37824  5216] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AO-A128-01Z-00-DX1.4E6BFFBC-87AD-4ED4-959D-FEB5545400BE
+downsample [1. 1.]
+downsampled_level_dim [41831 33941]
+level_dim [41831 33941]
+name TCGA-AO-A128-01Z-00-DX1.4E6BFFBC-87AD-4ED4-959D-FEB5545400BE
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 8192 12224] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8416 12224] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8416 12448] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8640 12224] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8640 12448] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+😴 已处理 160 张，休息 5 秒...
+
+🎯 处理 TCGA-A7-A4SC-01Z-00-DX1.171E89D2-2D64-4C3F-A42C-B1167654858B
+downsample [1. 1.]
+downsampled_level_dim [52836 31933]
+level_dim [52836 31933]
+name TCGA-A7-A4SC-01Z-00-DX1.171E89D2-2D64-4C3F-A42C-B1167654858B
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AO-A0JI-01Z-00-DX1.4DCDA545-B7E3-49DF-AB10-963E84BEB105
+downsample [1. 1.]
+downsampled_level_dim [35855 24057]
+level_dim [35855 24057]
+name TCGA-AO-A0JI-01Z-00-DX1.4DCDA545-B7E3-49DF-AB10-963E84BEB105
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A07L-01Z-00-DX1.D9E1051F-724E-4E88-940A-C97005DC5BEB
+downsample [1. 1.]
+downsampled_level_dim [39168 39168]
+level_dim [39168 39168]
+name TCGA-A8-A07L-01Z-00-DX1.D9E1051F-724E-4E88-940A-C97005DC5BEB
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-BH-A0BO-01Z-00-DX1.1A704471-FEB3-40F9-9838-3E347A18285F
+downsample [1. 1.]
+downsampled_level_dim [54727 36209]
+level_dim [54727 36209]
+name TCGA-BH-A0BO-01Z-00-DX1.1A704471-FEB3-40F9-9838-3E347A18285F
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A3W6-01Z-00-DX1.88CC534C-F032-4E5D-9CC4-4BB50AA46880
+downsample [1. 1.]
+downsampled_level_dim [33863 25780]
+level_dim [33863 25780]
+name TCGA-AC-A3W6-01Z-00-DX1.88CC534C-F032-4E5D-9CC4-4BB50AA46880
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [11425 10592] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11425 11040] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11649 10368] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11649 11040] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [11873 10368] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+
+🎯 处理 TCGA-A2-A0CP-01Z-00-DX1.ECFD263C-BB17-4ADA-8F2C-654C2AA4C45F
+downsample [1. 1.]
+downsampled_level_dim [34473 29843]
+level_dim [34473 29843]
+name TCGA-A2-A0CP-01Z-00-DX1.ECFD263C-BB17-4ADA-8F2C-654C2AA4C45F
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A0CG-01Z-00-DX2.81138E90-373A-4C12-B9CA-6EEF5F84A5B5
+downsample [1. 1.]
+downsampled_level_dim [75684 19228]
+level_dim [75684 19228]
+name TCGA-A7-A0CG-01Z-00-DX2.81138E90-373A-4C12-B9CA-6EEF5F84A5B5
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A07G-01Z-00-DX1.37E8A762-8141-4BE6-935A-B3DCB712BB4A
+downsample [1. 1.]
+downsampled_level_dim [50432 47872]
+level_dim [50432 47872]
+name TCGA-A8-A07G-01Z-00-DX1.37E8A762-8141-4BE6-935A-B3DCB712BB4A
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A6VX-01Z-00-DX2.9EE94B59-6A2C-4507-AA4F-DC6402F2B74F
+downsample [1. 1.]
+downsampled_level_dim [23324 17959]
+level_dim [23324 17959]
+name TCGA-A7-A6VX-01Z-00-DX2.9EE94B59-6A2C-4507-AA4F-DC6402F2B74F
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/problem2_patch2/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-E9-A1NI-01Z-00-DX1.AF90ACEF-EDED-40E6-955B-80ACC49778F9
+downsample [1. 1.]
+downsampled_level_dim [36388 34550]
+level_dim [36388 34550]
+name TCGA-E9-A1NI-01Z-00-DX1.AF90ACEF-EDED-40E6-955B-80ACC49778F9
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [14752  1664] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22592 29216] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22816 29216] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [24160 18016] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+😴 已处理 170 张，休息 5 秒...
+
+🎯 处理 TCGA-OL-A5RV-01Z-00-DX1.920AC243-1DAC-4854-BEB6-1CBCC950F26B
+downsample [1. 1.]
+downsampled_level_dim [24315 22157]
+level_dim [24315 22157]
+name TCGA-OL-A5RV-01Z-00-DX1.920AC243-1DAC-4854-BEB6-1CBCC950F26B
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A06T-01Z-00-DX1.BA8B8FC3-6169-48C1-BE1F-37F140CB4D3B
+downsample [1. 1.]
+downsampled_level_dim [44288 41216]
+level_dim [44288 41216]
+name TCGA-A8-A06T-01Z-00-DX1.BA8B8FC3-6169-48C1-BE1F-37F140CB4D3B
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AR-A24Z-01Z-00-DX1.C88AFF18-A8E4-426A-BEA3-70566DE39C46
+downsample [1. 1.]
+downsampled_level_dim [31416 26805]
+level_dim [31416 26805]
+name TCGA-AR-A24Z-01Z-00-DX1.C88AFF18-A8E4-426A-BEA3-70566DE39C46
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [19080 18023] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19304 14887] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19304 15111] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19304 18023] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [19528 17799] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AC-A8OR-01Z-00-DX1.C9A35592-1E73-40D4-834A-46E3471D84A3
+downsample [1. 1.]
+downsampled_level_dim [11031 15764]
+level_dim [11031 15764]
+name TCGA-AC-A8OR-01Z-00-DX1.C9A35592-1E73-40D4-834A-46E3471D84A3
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A06P-01Z-00-DX1.37660D0F-1595-43C5-9D30-58D6CB93B52C
+downsample [1. 1.]
+downsampled_level_dim [39168 54016]
+level_dim [39168 54016]
+name TCGA-A8-A06P-01Z-00-DX1.37660D0F-1595-43C5-9D30-58D6CB93B52C
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-E9-A6HE-01Z-00-DX1.97514DBA-9BC0-4554-9A43-99C48C6B953A
+downsample [1. 1.]
+downsampled_level_dim [39984 37145]
+level_dim [39984 37145]
+name TCGA-E9-A6HE-01Z-00-DX1.97514DBA-9BC0-4554-9A43-99C48C6B953A
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [15459 34356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [15683 34132] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [15683 34356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [15683 34580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [15907 34356] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [15907 34580] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [17027 35252] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [17251 34804] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 6722 25410] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [ 6946 24738] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [32258 15778] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [32482 13090] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AN-A0XN-01Z-00-DX1.A8EB9F62-236E-4C59-A206-DF0C7654AC30
+downsample [1. 1.]
+downsampled_level_dim [28884 25575]
+level_dim [28884 25575]
+name TCGA-AN-A0XN-01Z-00-DX1.A8EB9F62-236E-4C59-A206-DF0C7654AC30
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-D8-A73X-01Z-00-DX1.5F0DF75C-594C-42DF-BE3F-E00E5E01DCD6
+downsample [1. 1.]
+downsampled_level_dim [29880 36301]
+level_dim [29880 36301]
+name TCGA-D8-A73X-01Z-00-DX1.5F0DF75C-594C-42DF-BE3F-E00E5E01DCD6
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A07Z-01Z-00-DX1.713945D9-6855-456D-87FB-EF8AF8980F51
+downsample [1. 1.]
+downsampled_level_dim [30464 55552]
+level_dim [30464 55552]
+name TCGA-A8-A07Z-01Z-00-DX1.713945D9-6855-456D-87FB-EF8AF8980F51
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A2-A4S1-01Z-00-DX1.C69B14F6-5021-4FD8-8F2D-70227A5DA2B1
+downsample [1. 1.]
+downsampled_level_dim [46172 24966]
+level_dim [46172 24966]
+name TCGA-A2-A4S1-01Z-00-DX1.C69B14F6-5021-4FD8-8F2D-70227A5DA2B1
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 180 张，休息 5 秒...
+
+🎯 处理 TCGA-HN-A2NL-01Z-00-DX1.C2EAF378-4B37-4C1C-BB0F-18FAC62EEC13
+downsample [1. 1.]
+downsampled_level_dim [27984 24005]
+level_dim [27984 24005]
+name TCGA-HN-A2NL-01Z-00-DX1.C2EAF378-4B37-4C1C-BB0F-18FAC62EEC13
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-OL-A66I-01Z-00-DX1.8CE9DCAB-98D3-4163-94AC-1557D86C1E25
+downsample [1. 1.]
+downsampled_level_dim [33408 37760]
+level_dim [33408 37760]
+name TCGA-OL-A66I-01Z-00-DX1.8CE9DCAB-98D3-4163-94AC-1557D86C1E25
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 7776 20288] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8000 20288] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8224 20288] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9344 21184] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9568 21184] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9792 21184] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9792 21408] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A2-A3XS-01Z-00-DX1.867925C0-91D8-40A0-9FEA-25A635AC31E7
+downsample [1. 1.]
+downsampled_level_dim [27132 35318]
+level_dim [27132 35318]
+name TCGA-A2-A3XS-01Z-00-DX1.867925C0-91D8-40A0-9FEA-25A635AC31E7
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 9955 26946] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [10179 26946] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [13763 22914] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A8-A07J-01Z-00-DX1.FE16248C-D890-4750-A9FC-5F72BE8D8B85
+downsample [1. 1.]
+downsampled_level_dim [42240 44288]
+level_dim [42240 44288]
+name TCGA-A8-A07J-01Z-00-DX1.FE16248C-D890-4750-A9FC-5F72BE8D8B85
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-D8-A27T-01Z-00-DX2.7CCFE3AA-955B-4D77-9EDB-7B36D5A01168
+downsample [1. 1.]
+downsampled_level_dim [52788 34212]
+level_dim [52788 34212]
+name TCGA-D8-A27T-01Z-00-DX2.7CCFE3AA-955B-4D77-9EDB-7B36D5A01168
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-HN-A2OB-01Z-00-DX1.14F1FBFB-4540-43CE-9D79-5BC628640424
+downsample [1. 1.]
+downsampled_level_dim [69961 26289]
+level_dim [69961 26289]
+name TCGA-HN-A2OB-01Z-00-DX1.14F1FBFB-4540-43CE-9D79-5BC628640424
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [23712 13936] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [26848 15280] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A7-A0CJ-01Z-00-DX1.E26F2F62-D688-4373-BB7B-790A06734E49
+downsample [1. 1.]
+downsampled_level_dim [15708 38581]
+level_dim [15708 38581]
+name TCGA-A7-A0CJ-01Z-00-DX1.E26F2F62-D688-4373-BB7B-790A06734E49
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A06Y-01Z-00-DX1.3BC58446-524E-43F3-AAE6-FBC4AA543E66
+downsample [1. 1.]
+downsampled_level_dim [46848 32000]
+level_dim [46848 32000]
+name TCGA-A8-A06Y-01Z-00-DX1.3BC58446-524E-43F3-AAE6-FBC4AA543E66
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A6VV-01Z-00-DX1.07AE0E16-A883-4C86-BC74-4E13081175F2
+downsample [1. 1.]
+downsampled_level_dim [29988 23611]
+level_dim [29988 23611]
+name TCGA-A7-A6VV-01Z-00-DX1.07AE0E16-A883-4C86-BC74-4E13081175F2
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-E9-A24A-01Z-00-DX1.F0342837-5750-4172-B60D-5F902E2A02FD
+downsample [1. 1.]
+downsampled_level_dim [30464 37920]
+level_dim [30464 37920]
+name TCGA-E9-A24A-01Z-00-DX1.F0342837-5750-4172-B60D-5F902E2A02FD
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [20128  6304] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20576  5184] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22592 10784] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+😴 已处理 190 张，休息 5 秒...
+
+🎯 处理 TCGA-A8-A07C-01Z-00-DX1.1F069BCA-D2B3-49CF-81FD-9EBA49A3439F
+downsample [1. 1.]
+downsampled_level_dim [58112 37120]
+level_dim [58112 37120]
+name TCGA-A8-A07C-01Z-00-DX1.1F069BCA-D2B3-49CF-81FD-9EBA49A3439F
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AR-A1AN-01Z-00-DX1.1118F9FE-6DF2-4496-B102-D3A10D332EC0
+downsample [1. 1.]
+downsampled_level_dim [60452 24240]
+level_dim [60452 24240]
+name TCGA-AR-A1AN-01Z-00-DX1.1118F9FE-6DF2-4496-B102-D3A10D332EC0
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [40898 11328] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A7-A4SF-01Z-00-DX1.CDCFD4BC-4363-4CF2-95F5-4922E04C3B9D
+downsample [1. 1.]
+downsampled_level_dim [14280 20378]
+level_dim [14280 20378]
+name TCGA-A7-A4SF-01Z-00-DX1.CDCFD4BC-4363-4CF2-95F5-4922E04C3B9D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-LL-A73Z-01Z-00-DX1.C010142E-29C0-411D-9E0E-4B7D8A4C09BF
+downsample [1. 1.]
+downsampled_level_dim [37848 23291]
+level_dim [37848 23291]
+name TCGA-LL-A73Z-01Z-00-DX1.C010142E-29C0-411D-9E0E-4B7D8A4C09BF
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AN-A0XT-01Z-00-DX1.882AF4CE-62A1-4808-9B4B-780066E5E602
+downsample [1. 1.]
+downsampled_level_dim [24900 22029]
+level_dim [24900 22029]
+name TCGA-AN-A0XT-01Z-00-DX1.882AF4CE-62A1-4808-9B4B-780066E5E602
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A7VC-01Z-00-DX1.EB247544-EADE-419C-B7A7-BB9CC978336F
+downsample [1. 1.]
+downsampled_level_dim [22542 23337]
+level_dim [22542 23337]
+name TCGA-AC-A7VC-01Z-00-DX1.EB247544-EADE-419C-B7A7-BB9CC978336F
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-D8-A27N-01Z-00-DX2.EB803DEC-438B-43A9-B906-FD7C3B9A0138
+downsample [1. 1.]
+downsampled_level_dim [32868 28609]
+level_dim [32868 28609]
+name TCGA-D8-A27N-01Z-00-DX2.EB803DEC-438B-43A9-B906-FD7C3B9A0138
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-MS-A51U-01Z-00-DX1.490DE85A-ECE5-4E2A-9657-841BE6FFCCA0
+downsample [1. 1.]
+downsampled_level_dim [20000 23112]
+level_dim [20000 23112]
+name TCGA-MS-A51U-01Z-00-DX1.490DE85A-ECE5-4E2A-9657-841BE6FFCCA0
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AO-A0J8-01Z-00-DX1.9BDD4BDE-2A07-4E0C-B146-87365CA9DE3A
+downsample [1. 1.]
+downsampled_level_dim [51791 40789]
+level_dim [51791 40789]
+name TCGA-AO-A0J8-01Z-00-DX1.9BDD4BDE-2A07-4E0C-B146-87365CA9DE3A
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [32323 36064] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [32547 36288] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A7-A3IY-01Z-00-DX1.B4E75265-3B2A-456C-996A-F95B5A645BF8
+downsample [1. 1.]
+downsampled_level_dim [20468 37276]
+level_dim [20468 37276]
+name TCGA-A7-A3IY-01Z-00-DX1.B4E75265-3B2A-456C-996A-F95B5A645BF8
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [7459 7521] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [8355 7297] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [8803 7521] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+😴 已处理 200 张，休息 5 秒...
+
+🎯 处理 TCGA-A7-A6VX-01Z-00-DX1.F74DA243-C65A-4997-BCA0-F1C89675978C
+downsample [1. 1.]
+downsampled_level_dim [67116 17955]
+level_dim [67116 17955]
+name TCGA-A7-A6VX-01Z-00-DX1.F74DA243-C65A-4997-BCA0-F1C89675978C
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A5ZX-01Z-00-DX1.A4C651F0-DB8E-4534-84A2-AD875F62209F
+downsample [1. 1.]
+downsampled_level_dim [47124 31599]
+level_dim [47124 31599]
+name TCGA-A7-A5ZX-01Z-00-DX1.A4C651F0-DB8E-4534-84A2-AD875F62209F
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A26H-01Z-00-DX1.3344CFD3-5A19-4B01-BEB2-AB89F83FD53A
+downsample [1. 1.]
+downsampled_level_dim [44268 23886]
+level_dim [44268 23886]
+name TCGA-A7-A26H-01Z-00-DX1.3344CFD3-5A19-4B01-BEB2-AB89F83FD53A
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A06U-01Z-00-DX1.56070AB9-A73E-44B8-8051-D93E8F881BBE
+downsample [1. 1.]
+downsampled_level_dim [40704 45824]
+level_dim [40704 45824]
+name TCGA-A8-A06U-01Z-00-DX1.56070AB9-A73E-44B8-8051-D93E8F881BBE
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A5EI-01Z-00-DX1.A174D91A-730E-460C-AE73-46CA1E5B177B
+downsample [1. 1.]
+downsampled_level_dim [23502 33108]
+level_dim [23502 33108]
+name TCGA-AC-A5EI-01Z-00-DX1.A174D91A-730E-460C-AE73-46CA1E5B177B
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-C8-A132-01Z-00-DX1.6CCE1FE0-BB4B-4046-BAF0-43AA110B2EBE
+downsample [1. 1.]
+downsampled_level_dim [32368 29473]
+level_dim [32368 29473]
+name TCGA-C8-A132-01Z-00-DX1.6CCE1FE0-BB4B-4046-BAF0-43AA110B2EBE
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [16354 13504] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A7-A26F-01Z-00-DX1.7ADE881D-325D-48ED-BA2D-30F589CA8EF2
+downsample [1. 1.]
+downsampled_level_dim [46648 20861]
+level_dim [46648 20861]
+name TCGA-A7-A26F-01Z-00-DX1.7ADE881D-325D-48ED-BA2D-30F589CA8EF2
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A08T-01Z-00-DX1.ABA1ABF2-DDB1-4E31-89DC-0F7821311D11
+downsample [1. 1.]
+downsampled_level_dim [35584 48896]
+level_dim [35584 48896]
+name TCGA-A8-A08T-01Z-00-DX1.ABA1ABF2-DDB1-4E31-89DC-0F7821311D11
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 5888 22800] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 5888 23472] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [ 8800 12048] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [ 9248 11600] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 9472 11600] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [20448 11152] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [28288 15632] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [28512 15184] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [28512 15408] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [28512 15632] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AQ-A04L-01Z-00-DX1.F35BF4DD-896A-43C2-8DA6-C67945C003BE
+downsample [1. 1.]
+downsampled_level_dim [33604 27541]
+level_dim [33604 27541]
+name TCGA-AQ-A04L-01Z-00-DX1.F35BF4DD-896A-43C2-8DA6-C67945C003BE
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 8352 23458] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [ 8576 23458] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11040 20546] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AO-A1KO-01Z-00-DX1.EEB5E0A0-92B2-42CD-9F7A-00E9250B561F
+downsample [1. 1.]
+downsampled_level_dim [49933 41465]
+level_dim [49933 41465]
+name TCGA-AO-A1KO-01Z-00-DX1.EEB5E0A0-92B2-42CD-9F7A-00E9250B561F
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [34208 12768] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [34432 12768] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [34432 13216] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+😴 已处理 210 张，休息 5 秒...
+
+🎯 处理 TCGA-A7-A3J1-01Z-00-DX1.92895B92-5F95-4EA3-9237-4CAF63CDE3FF
+downsample [1. 1.]
+downsampled_level_dim [68068 19611]
+level_dim [68068 19611]
+name TCGA-A7-A3J1-01Z-00-DX1.92895B92-5F95-4EA3-9237-4CAF63CDE3FF
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A5ZW-01Z-00-DX1.5F571EE3-A1A3-4604-BE89-1A46E0EC508B
+downsample [1. 1.]
+downsampled_level_dim [59976 12023]
+level_dim [59976 12023]
+name TCGA-A7-A5ZW-01Z-00-DX1.5F571EE3-A1A3-4604-BE89-1A46E0EC508B
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A2-A0CK-01Z-00-DX1.C3226BD1-11B0-4034-946A-BAB42958CE85
+downsample [1. 1.]
+downsampled_level_dim [33796 28323]
+level_dim [33796 28323]
+name TCGA-A2-A0CK-01Z-00-DX1.C3226BD1-11B0-4034-946A-BAB42958CE85
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AO-A0J4-01Z-00-DX1.2EFC978E-8DF5-4254-9598-C0910B17C5C8
+downsample [1. 1.]
+downsampled_level_dim [53783 32991]
+level_dim [53783 32991]
+name TCGA-AO-A0J4-01Z-00-DX1.2EFC978E-8DF5-4254-9598-C0910B17C5C8
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [3584 3904] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [14560 12864] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [15008 13312] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [17920 13536] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [25312 13312] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [33600 10848] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [35840 22720] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-OL-A5RW-01Z-00-DX1.E16DE8EE-31AF-4EAF-A85F-DB3E3E2C3BFF
+downsample [1. 1.]
+downsampled_level_dim [12879 13618]
+level_dim [12879 13618]
+name TCGA-OL-A5RW-01Z-00-DX1.E16DE8EE-31AF-4EAF-A85F-DB3E3E2C3BFF
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-B6-A0IJ-01Z-00-DX1.BF2E062F-06DA-4CA8-86C4-36674C035CAA
+downsample [1. 1.]
+downsampled_level_dim [51231 17757]
+level_dim [51231 17757]
+name TCGA-B6-A0IJ-01Z-00-DX1.BF2E062F-06DA-4CA8-86C4-36674C035CAA
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A3BB-01Z-00-DX1.CE889249-2A5E-44DA-B04E-746BE82CD805
+downsample [1. 1.]
+downsampled_level_dim [18226 28752]
+level_dim [18226 28752]
+name TCGA-AC-A3BB-01Z-00-DX1.CE889249-2A5E-44DA-B04E-746BE82CD805
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A09I-01Z-00-DX1.B738E479-8766-4766-B012-B32AC2F27533
+downsample [1. 1.]
+downsampled_level_dim [78336 45824]
+level_dim [78336 45824]
+name TCGA-A8-A09I-01Z-00-DX1.B738E479-8766-4766-B012-B32AC2F27533
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-GM-A2DA-01Z-00-DX1.6E409F88-F654-48C8-A753-BB054037BE16
+downsample [1. 1.]
+downsampled_level_dim [31892 23768]
+level_dim [31892 23768]
+name TCGA-GM-A2DA-01Z-00-DX1.6E409F88-F654-48C8-A753-BB054037BE16
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [7264 3809] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [7488 3137] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [7488 3361] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [7712 3585] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AC-A62V-01Z-00-DX1.2D8994FD-58B8-43C1-B99D-AA964E7DFD60
+downsample [1. 1.]
+downsampled_level_dim [18705  9360]
+level_dim [18705  9360]
+name TCGA-AC-A62V-01Z-00-DX1.2D8994FD-58B8-43C1-B99D-AA964E7DFD60
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 220 张，休息 5 秒...
+
+🎯 处理 TCGA-PL-A8LX-01A-02-DX2.84DA8B75-1196-4704-B6B2-C5E7BF645E95
+downsample [1. 1.]
+downsampled_level_dim [55776 11617]
+level_dim [55776 11617]
+name TCGA-PL-A8LX-01A-02-DX2.84DA8B75-1196-4704-B6B2-C5E7BF645E95
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A0A2-01Z-00-DX1.47BCDF13-1065-466A-B7CB-F91F5EAD7D91
+downsample [1. 1.]
+downsampled_level_dim [ 41728 114432]
+level_dim [ 41728 114432]
+name TCGA-A8-A0A2-01Z-00-DX1.47BCDF13-1065-466A-B7CB-F91F5EAD7D91
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-E9-A227-01Z-00-DX1.823062BF-3444-489B-AF91-AAD4ECAA1DC7
+downsample [1. 1.]
+downsampled_level_dim [26180 32095]
+level_dim [26180 32095]
+name TCGA-E9-A227-01Z-00-DX1.823062BF-3444-489B-AF91-AAD4ECAA1DC7
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A8OS-01Z-00-DX1.3FD44846-8BD2-4A7A-9A87-8D3D29C25F60
+downsample [1. 1.]
+downsampled_level_dim [23022 23213]
+level_dim [23022 23213]
+name TCGA-AC-A8OS-01Z-00-DX1.3FD44846-8BD2-4A7A-9A87-8D3D29C25F60
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A0CD-01Z-00-DX1.F045B9C8-049C-41BF-8432-EF89F236D34D
+downsample [1. 1.]
+downsampled_level_dim [48076 18746]
+level_dim [48076 18746]
+name TCGA-A7-A0CD-01Z-00-DX1.F045B9C8-049C-41BF-8432-EF89F236D34D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/problem2_patch2/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [ 9120 15782] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11136 16230] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [11808  7942] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [14048 16230] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [32615 11106] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [35527 12898] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [36871 13346] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [40231 14242] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [41127  6626] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-E2-A1IN-01Z-00-DX1.F63F004F-847D-41B0-BAEF-3189D4965838
+downsample [1. 1.]
+downsampled_level_dim [46648 40110]
+level_dim [46648 40110]
+name TCGA-E2-A1IN-01Z-00-DX1.F63F004F-847D-41B0-BAEF-3189D4965838
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A6VY-01Z-00-DX1.38D4EBD7-40B0-4EE3-960A-1F00E8F83ADB
+downsample [1. 1.]
+downsampled_level_dim [55216 19813]
+level_dim [55216 19813]
+name TCGA-A7-A6VY-01Z-00-DX1.38D4EBD7-40B0-4EE3-960A-1F00E8F83ADB
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A0AB-01Z-00-DX1.103ED338-A0F9-403B-A10C-49840BD60EB8
+downsample [1. 1.]
+downsampled_level_dim [35584 42752]
+level_dim [35584 42752]
+name TCGA-A8-A0AB-01Z-00-DX1.103ED338-A0F9-403B-A10C-49840BD60EB8
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-BH-A0BM-01Z-00-DX1.8BD324F2-60F5-4F59-AF2D-533A5FB230BF
+downsample [1. 1.]
+downsampled_level_dim [44528 37689]
+level_dim [44528 37689]
+name TCGA-BH-A0BM-01Z-00-DX1.8BD324F2-60F5-4F59-AF2D-533A5FB230BF
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A13F-01Z-00-DX1.AB4ADDD3-8E1C-4AB9-813E-D137A2CFB950
+downsample [1. 1.]
+downsampled_level_dim [44268 24561]
+level_dim [44268 24561]
+name TCGA-A7-A13F-01Z-00-DX1.AB4ADDD3-8E1C-4AB9-813E-D137A2CFB950
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 230 张，休息 5 秒...
+
+🎯 处理 TCGA-A7-A0CJ-01Z-00-DX2.4B591117-5FC9-4B43-8A45-444CCCABC666
+downsample [1. 1.]
+downsampled_level_dim [19516 36942]
+level_dim [19516 36942]
+name TCGA-A7-A0CJ-01Z-00-DX2.4B591117-5FC9-4B43-8A45-444CCCABC666
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A0DC-01Z-00-DX1.C770781E-83E4-47DD-B658-25BBBBB32066
+downsample [1. 1.]
+downsampled_level_dim [41888 15506]
+level_dim [41888 15506]
+name TCGA-A7-A0DC-01Z-00-DX1.C770781E-83E4-47DD-B658-25BBBBB32066
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AO-A1KP-01Z-00-DX1.612442AB-24E2-489B-9838-7CEE82BCD605
+downsample [1. 1.]
+downsampled_level_dim [45938 35350]
+level_dim [45938 35350]
+name TCGA-AO-A1KP-01Z-00-DX1.612442AB-24E2-489B-9838-7CEE82BCD605
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [16608 25312] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A7-A0DA-01Z-00-DX2.90C93176-C3C6-41B3-B34B-B16F1A1779E6
+downsample [1. 1.]
+downsampled_level_dim [74732 17985]
+level_dim [74732 17985]
+name TCGA-A7-A0DA-01Z-00-DX2.90C93176-C3C6-41B3-B34B-B16F1A1779E6
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A6IW-01Z-00-DX1.C4514189-E64F-4603-8970-230FA2BB77FC
+downsample [1. 1.]
+downsampled_level_dim [14389 17310]
+level_dim [14389 17310]
+name TCGA-AC-A6IW-01Z-00-DX1.C4514189-E64F-4603-8970-230FA2BB77FC
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AN-A0AM-01Z-00-DX1.169CE39A-DD54-46D8-8D03-60B69A473CDB
+downsample [1. 1.]
+downsampled_level_dim [22372 25147]
+level_dim [22372 25147]
+name TCGA-AN-A0AM-01Z-00-DX1.169CE39A-DD54-46D8-8D03-60B69A473CDB
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [15648  6018] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [15872  6018] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-GI-A2C9-01Z-00-DX1.90181423-51ED-41FE-9B8F-973A67793D4F
+downsample [1. 1.]
+downsampled_level_dim [22372 27833]
+level_dim [22372 27833]
+name TCGA-GI-A2C9-01Z-00-DX1.90181423-51ED-41FE-9B8F-973A67793D4F
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-BH-A0DT-01Z-00-DX1.73AFCEBB-06B1-4870-ADA2-881511B1BE2D
+downsample [1. 1.]
+downsampled_level_dim [50406 34956]
+level_dim [50406 34956]
+name TCGA-BH-A0DT-01Z-00-DX1.73AFCEBB-06B1-4870-ADA2-881511B1BE2D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/problem1_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A3W7-01Z-00-DX1.189BB448-ECBA-4042-8A35-4B787271E8FE
+downsample [1. 1.]
+downsampled_level_dim [18924 19329]
+level_dim [18924 19329]
+name TCGA-AC-A3W7-01Z-00-DX1.189BB448-ECBA-4042-8A35-4B787271E8FE
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A0DC-01Z-00-DX2.795FD529-D7C2-407D-9E8A-5DCE1EF49029
+downsample [1. 1.]
+downsampled_level_dim [67592 29559]
+level_dim [67592 29559]
+name TCGA-A7-A0DC-01Z-00-DX2.795FD529-D7C2-407D-9E8A-5DCE1EF49029
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 240 张，休息 5 秒...
+
+🎯 处理 TCGA-A7-A0D9-01Z-00-DX2.66CD9ED8-223B-4AC8-AA1A-2481FB0C47B3
+downsample [1. 1.]
+downsampled_level_dim [54264 13365]
+level_dim [54264 13365]
+name TCGA-A7-A0D9-01Z-00-DX2.66CD9ED8-223B-4AC8-AA1A-2481FB0C47B3
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A07P-01Z-00-DX1.2C7C75EF-EEE2-4A42-994C-A1A40850C87A
+downsample [1. 1.]
+downsampled_level_dim [27392 40192]
+level_dim [27392 40192]
+name TCGA-A8-A07P-01Z-00-DX1.2C7C75EF-EEE2-4A42-994C-A1A40850C87A
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-C8-A26Y-01Z-00-DX1.166EE604-4EF3-401D-99E9-3A9711316CC4
+downsample [1. 1.]
+downsampled_level_dim [31416 30462]
+level_dim [31416 30462]
+name TCGA-C8-A26Y-01Z-00-DX1.166EE604-4EF3-401D-99E9-3A9711316CC4
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-JL-A3YW-01Z-00-DX1.827C5C53-9C30-4307-802A-5A7896828A7F
+downsample [1. 1.]
+downsampled_level_dim [68068 28685]
+level_dim [68068 28685]
+name TCGA-JL-A3YW-01Z-00-DX1.827C5C53-9C30-4307-802A-5A7896828A7F
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AC-A8OQ-01Z-00-DX1.15946A44-711C-4765-AB46-5CFB7BD11E42
+downsample [1. 1.]
+downsampled_level_dim [28298 28837]
+level_dim [28298 28837]
+name TCGA-AC-A8OQ-01Z-00-DX1.15946A44-711C-4765-AB46-5CFB7BD11E42
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A09Q-01Z-00-DX1.C7240AFB-5971-4577-812C-A255C249001A
+downsample [1. 1.]
+downsampled_level_dim [36096 39168]
+level_dim [36096 39168]
+name TCGA-A8-A09Q-01Z-00-DX1.C7240AFB-5971-4577-812C-A255C249001A
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [22736 15808] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22736 16032] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22736 16256] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-A7-A13E-01Z-00-DX1.891954FF-316A-4562-AA14-429631944F22
+downsample [1. 1.]
+downsampled_level_dim [71400 15163]
+level_dim [71400 15163]
+name TCGA-A7-A13E-01Z-00-DX1.891954FF-316A-4562-AA14-429631944F22
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-PL-A8LZ-01A-03-DX3.E5D16DBF-CABD-4C96-A794-5F27BC305055
+downsample [1. 1.]
+downsampled_level_dim [58764 17435]
+level_dim [58764 17435]
+name TCGA-PL-A8LZ-01A-03-DX3.E5D16DBF-CABD-4C96-A794-5F27BC305055
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [9216 5187] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AO-A0JF-01Z-00-DX1.3277D13C-F257-4D4C-AB5C-BEBA2E1A63D8
+downsample [1. 1.]
+downsampled_level_dim [57767 45275]
+level_dim [57767 45275]
+name TCGA-AO-A0JF-01Z-00-DX1.3277D13C-F257-4D4C-AB5C-BEBA2E1A63D8
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [13936 23056] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AC-A2FM-01Z-00-DX1.5D2309D5-C47B-4B04-B7B8-2F0685842889
+downsample [1. 1.]
+downsampled_level_dim [26859 18681]
+level_dim [26859 18681]
+name TCGA-AC-A2FM-01Z-00-DX1.5D2309D5-C47B-4B04-B7B8-2F0685842889
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+😴 已处理 250 张，休息 5 秒...
+
+🎯 处理 TCGA-A7-A13H-01Z-00-DX2.6C937651-4D3E-475D-99F6-4A9FD25CD48B
+downsample [1. 1.]
+downsampled_level_dim [49028 21402]
+level_dim [49028 21402]
+name TCGA-A7-A13H-01Z-00-DX2.6C937651-4D3E-475D-99F6-4A9FD25CD48B
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A07R-01Z-00-DX1.D716752E-86AF-468B-A905-A7894B978F22
+downsample [1. 1.]
+downsampled_level_dim [35584 42752]
+level_dim [35584 42752]
+name TCGA-A8-A07R-01Z-00-DX1.D716752E-86AF-468B-A905-A7894B978F22
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-AN-A0XP-01Z-00-DX1.A4EE3970-5C1F-482E-9AED-F1E3C52A776F
+downsample [1. 1.]
+downsampled_level_dim [29880 23727]
+level_dim [29880 23727]
+name TCGA-AN-A0XP-01Z-00-DX1.A4EE3970-5C1F-482E-9AED-F1E3C52A776F
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A13F-01Z-00-DX2.8CC23BAD-B3CC-4BBC-832A-A3879D6EF62D
+downsample [1. 1.]
+downsampled_level_dim [47600 23830]
+level_dim [47600 23830]
+name TCGA-A7-A13F-01Z-00-DX2.8CC23BAD-B3CC-4BBC-832A-A3879D6EF62D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-5L-AAT1-01Z-00-DX1.F3449A5B-2AC4-4ED7-BF44-4C8946CDB47D
+downsample [1. 1.]
+downsampled_level_dim [44820 39837]
+level_dim [44820 39837]
+name TCGA-5L-AAT1-01Z-00-DX1.F3449A5B-2AC4-4ED7-BF44-4C8946CDB47D
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A8-A07O-01Z-00-DX1.3D657129-F2A7-4BC1-A910-805FBDCE2212
+downsample [1. 1.]
+downsampled_level_dim [42240 58624]
+level_dim [42240 58624]
+name TCGA-A8-A07O-01Z-00-DX1.3D657129-F2A7-4BC1-A910-805FBDCE2212
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-PL-A8LY-01A-02-DX2.6F9520F1-3210-4A96-81C2-A14424F650D1
+downsample [1. 1.]
+downsampled_level_dim [42828 10125]
+level_dim [42828 10125]
+name TCGA-PL-A8LY-01A-02-DX2.6F9520F1-3210-4A96-81C2-A14424F650D1
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+
+🎯 处理 TCGA-A7-A6VV-01Z-00-DX2.4C2BF8C1-CC84-4A6E-BC0F-430BC8BE6B26
+downsample [1. 1.]
+downsampled_level_dim [49504 44513]
+level_dim [49504 44513]
+name TCGA-A7-A6VV-01Z-00-DX2.4C2BF8C1-CC84-4A6E-BC0F-430BC8BE6B26
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/problem2_patch2/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [21280 36448] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [22624 36224] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [27200 33664] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [27872 30752] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [28544 26272] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [29216 33440] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [31232 31872] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [31232 32320] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [31456 32096] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [31456 32320] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [32352 30976] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [32576 30752] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [32576 30976] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [32576 31200] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [33024 31424] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [33696 35456] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [33696 35680] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [33696 37024] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [34144 36352] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [35936 32320] 错误: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).
+❌ 归一化失败 patch: [39520 24480] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [39520 24704] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [39744 24256] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [39744 24480] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [40192 36128] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [17152 10016] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-PL-A8LZ-01A-02-DX2.E2697718-12E1-4D7C-9ED8-0A71C6D855B8
+downsample [1. 1.]
+downsampled_level_dim [39840 14502]
+level_dim [39840 14502]
+name TCGA-PL-A8LZ-01A-02-DX2.E2697718-12E1-4D7C-9ED8-0A71C6D855B8
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [7200 4832] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+❌ 归一化失败 patch: [13248  5952] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+
+🎯 处理 TCGA-AO-A125-01Z-00-DX1.DFC45CE1-5D81-4C2B-9281-60E2F146DDB6
+downsample [1. 1.]
+downsampled_level_dim [45815 33792]
+level_dim [45815 33792]
+name TCGA-AO-A125-01Z-00-DX1.DFC45CE1-5D81-4C2B-9281-60E2F146DDB6
+patch_level 0
+patch_size 224
+save_path /scratch/leuven/373/vsc37341/TCGA-BRCA/downsampled_20x_patch/patches
+
+feature extraction settings
+transformations:  Compose(
+    ToTensor()
+    Lambda()
+)
+❌ 归一化失败 patch: [10912 14816] 错误: kthvalue(): Expected reduction dim 0 to have non-zero size.
+😴 已处理 260 张，休息 5 秒...
+✅ Finished at: Sun Apr 13 01:37:54 CEST 2025

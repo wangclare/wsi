@@ -1,0 +1,18 @@
+SLURM_JOB_ID: 58121776
+SLURM_JOB_USER: vsc37341
+SLURM_JOB_ACCOUNT: intro_vsc37341
+SLURM_JOB_NAME: extract_feature_vit
+SLURM_CLUSTER_NAME: genius
+SLURM_JOB_PARTITION: gpu_p100
+SLURM_NNODES: 1
+SLURM_NODELIST: r22g35
+SLURM_JOB_CPUS_PER_NODE: 4
+SLURM_JOB_GPUS: 2
+Date: Fri May  2 13:01:54 CEST 2025
+Walltime: 01-00:00:00
+========================================================================
+Job ID: 58121776
+Node: r22g35
+Started at: Fri May  2 13:01:54 CEST 2025
+CMD: /var/spool/slurmd/job58121776/slurm_script 
+✅ Finished at: Fri May  2 15:26:29 CEST 2025

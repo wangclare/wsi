@@ -1,0 +1,18 @@
+SLURM_JOB_ID: 58120893
+SLURM_JOB_USER: vsc37341
+SLURM_JOB_ACCOUNT: intro_vsc37341
+SLURM_JOB_NAME: extract_feature_resnet
+SLURM_CLUSTER_NAME: genius
+SLURM_JOB_PARTITION: gpu_p100
+SLURM_NNODES: 1
+SLURM_NODELIST: r23g36
+SLURM_JOB_CPUS_PER_NODE: 4
+SLURM_JOB_GPUS: 2
+Date: Thu May  1 23:20:15 CEST 2025
+Walltime: 01-00:00:00
+========================================================================
+Job ID: 58120893
+Node: r23g36
+Started at: Thu May  1 23:20:15 CEST 2025
+CMD: /var/spool/slurmd/job58120893/slurm_script 
+✅ Finished at: Thu May  1 23:56:36 CEST 2025

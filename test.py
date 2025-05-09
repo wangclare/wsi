@@ -196,32 +196,48 @@ if __name__ == "__main__":
 #✅ 总计 patch 数量: 1464839,O
 '''
 import os
-import torch
-from torch.utils.data import DataLoader
-from torchvision.datasets import ImageFolder
+import warnings
+from torchvision import transforms
+from solo.data.pretrain_dataloader import prepare_datasets, prepare_dataloader
 
-# 1. 加载 solo-learn 的原始 DataLoader
-from main_pretrain import prepare_dataloader, prepare_datasets
+# 1. 屏蔽无关警告
+warnings.filterwarnings("ignore")
 
-# 2. 准备测试数据集
+# 2. 数据预处理（必须包含ToTensor）
+transform = transforms.Compose([
+    transforms.ToTensor(),  # 核心：将PIL图像转为张量
+])
+
+# 3. 数据集路径（按实际修改）
+DATA_PATH = "/scratch/leuven/373/vsc37341/bracs_shuffle_test"
+
+# 4. 加载数据
 dataset = prepare_datasets(
     dataset="custom",
-    transform=None,  # 暂时不用数据增强
-    train_data_path=os.environ["VSC_SCRATCH"] + "/bracs_shuffle_test",
-    no_labels=False
+    train_data_path=DATA_PATH,
+    transform=transform,
+    no_labels=True  # 无标签模式
 )
 
-# 3. 捕获 DataLoader 的数据顺序
+# 5. 创建DataLoader
 loader = prepare_dataloader(dataset, batch_size=4, num_workers=0)
 
-print("=== Shuffle 验证 ===")
-for epoch in range(2):
-    indices = next(iter(loader))[0].tolist()  # 获取第一批的样本索引
-    print(f"Epoch {epoch} 的首批索引: {indices}")
-    if epoch == 0:
-        first_batch = indices
+# 6. 验证shuffle
+print("=== Shuffle验证 ===")
+first_batch = next(iter(loader))[0].tolist()  # 第一批样本索引
+print(f"Epoch 0 首批索引: {first_batch}")
 
-# 4. 自动判断结果
-print("\n结论:", "✅ Shuffle 生效!" if first_batch != indices else "❌ Shuffle 未生效!")
+second_batch = next(iter(loader))[0].tolist()  # 第二批样本索引
+print(f"Epoch 1 首批索引: {second_batch}")
+
+# 7. 自动判断结果
+print("\n结论:", "✅ Shuffle生效!" if first_batch != second_batch else "❌ Shuffle未生效!")
+'''
+=== Shuffle验证 ===
+Epoch 0 首批索引: [3, 4, 8, 9]
+Epoch 1 首批索引: [8, 1, 5, 0]
+
+结论: ✅ Shuffle生效!
+'''
 #srun --account=intro_vsc37341 --clusters=genius --partition=gpu_p100 --nodes=1 --gpus-per-node=1 --mem=24G --time=00:30:00 --pty bash -l
 #python main_pretrain.py --config-path . --config-name bracs_simclr data.train_path=/tmp/bracs_test data.num_workers=0 optimizer.batch_size=4 max_epochs=2 devices=1 debug=true 2>&1 | grep "Processing.*Epoch" 

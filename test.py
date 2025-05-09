@@ -135,7 +135,7 @@ missing = sorted(set(wsi_names) - set(h5_names))
 print("未生成 .h5 文件的 WSI：")
 for name in missing:
     print(name)
-'''
+
 import h5py
 import os
 import csv
@@ -194,5 +194,34 @@ if __name__ == "__main__":
     count_all_patches(folder, save_csv_path=output_csv)
 #✅ 总计 patch 数量: 1464269,N
 #✅ 总计 patch 数量: 1464839,O
+'''
+import os
+import torch
+from torch.utils.data import DataLoader
+from torchvision.datasets import ImageFolder
 
+# 1. 加载 solo-learn 的原始 DataLoader
+from main_pretrain import prepare_dataloader, prepare_datasets
 
+# 2. 准备测试数据集
+dataset = prepare_datasets(
+    dataset="custom",
+    transform=None,  # 暂时不用数据增强
+    train_data_path=os.environ["VSC_SCRATCH"] + "/bracs_shuffle_test",
+    no_labels=False
+)
+
+# 3. 捕获 DataLoader 的数据顺序
+loader = prepare_dataloader(dataset, batch_size=4, num_workers=0)
+
+print("=== Shuffle 验证 ===")
+for epoch in range(2):
+    indices = next(iter(loader))[0].tolist()  # 获取第一批的样本索引
+    print(f"Epoch {epoch} 的首批索引: {indices}")
+    if epoch == 0:
+        first_batch = indices
+
+# 4. 自动判断结果
+print("\n结论:", "✅ Shuffle 生效!" if first_batch != indices else "❌ Shuffle 未生效!")
+#srun --account=intro_vsc37341 --clusters=genius --partition=gpu_p100 --nodes=1 --gpus-per-node=1 --mem=24G --time=00:30:00 --pty bash -l
+#python main_pretrain.py --config-path . --config-name bracs_simclr data.train_path=/tmp/bracs_test data.num_workers=0 optimizer.batch_size=4 max_epochs=2 devices=1 debug=true 2>&1 | grep "Processing.*Epoch" 

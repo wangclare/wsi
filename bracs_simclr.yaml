@@ -30,11 +30,11 @@ data:
   val_path: null
   format: "image_folder"
   no_labels: True
-  num_workers: 4
+  num_workers: 8
 
 optimizer:
   name: "lars"
-  batch_size: 256
+  batch_size: 128
   lr: 0.6
   weight_decay: 1e-6
   classifier_lr: 0.1
@@ -57,7 +57,7 @@ auto_resume:
   enabled: True
 
 max_epochs: 200
-devices: [0]
+devices: [0, 1]
 accelerator: "gpu"
 sync_batchnorm: True
 strategy: "ddp"

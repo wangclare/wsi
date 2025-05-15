@@ -1,0 +1,20 @@
+SLURM_JOB_ID: 58143723
+SLURM_JOB_USER: vsc37341
+SLURM_JOB_ACCOUNT: intro_vsc37341
+SLURM_JOB_NAME: extract_feature_vig
+SLURM_CLUSTER_NAME: genius
+SLURM_JOB_PARTITION: gpu_p100
+SLURM_NNODES: 1
+SLURM_NODELIST: r24g38
+SLURM_JOB_CPUS_PER_NODE: 4
+SLURM_JOB_GPUS: 1
+Date: Fri May  9 14:01:54 CEST 2025
+Walltime: 01-00:00:00
+========================================================================
+Job ID: 58143723
+Node: r24g38
+Started at: Fri May  9 14:01:54 CEST 2025
+CMD: /var/spool/slurmd/job58143723/slurm_script 
+dpr [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+num_knn [9, 9, 10, 10, 11, 12, 12, 13, 13, 14, 15, 15, 16, 16, 17, 18]
+✅ Finished at: Fri May  9 19:18:55 CEST 2025

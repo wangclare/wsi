@@ -1,0 +1,18 @@
+SLURM_JOB_ID: 58196801
+SLURM_JOB_USER: vsc37341
+SLURM_JOB_ACCOUNT: intro_vsc37341
+SLURM_JOB_NAME: extract_feature_simclr
+SLURM_CLUSTER_NAME: genius
+SLURM_JOB_PARTITION: gpu_p100
+SLURM_NNODES: 1
+SLURM_NODELIST: r23g37
+SLURM_JOB_CPUS_PER_NODE: 4
+SLURM_JOB_GPUS: 2
+Date: Sun May 25 15:31:31 CEST 2025
+Walltime: 01-00:00:00
+========================================================================
+Job ID: 58196801
+Node: r23g37
+Started at: Sun May 25 15:31:31 CEST 2025
+CMD: /var/spool/slurmd/job58196801/slurm_script 
+✅ Finished at: Sun May 25 16:18:01 CEST 2025

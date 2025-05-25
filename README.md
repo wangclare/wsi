@@ -7,8 +7,4 @@ https://drive.google.com/file/d/1-nOIL4GUlL8dt-Tcq-YjE8rA_Q2Qsl4E/view?usp=shari
 
 Note:
 
-Access is read-only.
-
-Only the checkpoint file is visible; no other content from the drive is shared.
-
 If the link is broken or inaccessible, please contact me.

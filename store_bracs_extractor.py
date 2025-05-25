@@ -1,6 +1,6 @@
 import torch
 
-ckpt_path = "/data/leuven/373/vsc37341/wsi_code/checkpoints/simclr_bracs/simclr/4/bracs-simclr-4-ep=199.ckpt"
+ckpt_path = "/data/leuven/373/vsc37341/wsi_code/checkpoints/simclr_bracs/simclr/2513962w/bracs-simclr-2513962w-ep=199.ckpt"
 ckpt = torch.load(ckpt_path, map_location='cpu')
 
 # 提取以 "backbone." 开头的参数

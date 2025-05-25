@@ -1,6 +1,6 @@
 import torch
 
-ckpt_path = '/data/leuven/373/vsc37341/wsi_code/checkpoints/simclr_bracs/simclr/4/bracs-simclr-4-ep=199.ckpt'  # 改成你的 ckpt 路径
+ckpt_path = '/data/leuven/373/vsc37341/wsi_code/checkpoints/simclr_bracs/simclr/2513962w/bracs-simclr-2513962w-ep=199.ckpt'  # 改成你的 ckpt 路径
 ckpt = torch.load(ckpt_path, map_location='cpu')
 
 
